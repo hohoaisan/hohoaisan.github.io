@@ -7,6 +7,15 @@
   {"name":"FIELD6","title":"HD"},
   {"name":"FIELD7","title":"HD"},
   {"name":"FIELD8","title":"HD"},
-  {"name":"FIELD9","title":"HD"},
+  {
+    "name":"FIELD9","title":"HD",
+    "data": "weblink",
+         "render": function(data, type, row, meta){
+            if(type === 'display'){
+                data = '<a href="' + data + '">' + data + '</a>';
+            }
+            return data;
+         }
+  },
   {"name":"FIELD10","title":"HD"}
 ]
