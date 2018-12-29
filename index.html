@@ -122,12 +122,7 @@
 					{ "name": "FIELD7", "title": "HD" },
 					{ "name": "FIELD8", "title": "HD" },
 					{
-						"name": "FIELD9", "title": "HD", "data": "weblink", "render": function (data, type, row, meta) {
-							if (type === 'display') {
-								data = '<a href="' + data + '">' + data + '</a>';
-							}
-							return data;
-						}
+						"name": "FIELD9", "title": "HD", "type": "html"
 					},
 					{ "name": "FIELD10", "title": "HD" }],
 				"rows": $.get("docs/content/rows.json")
