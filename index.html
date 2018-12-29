@@ -112,7 +112,6 @@
 				"sorting": {
 					"enabled": true
 				},
-				"pageSize": 50,
 				"columns": [
 					{ "name": "name", "title": "Tên" },
 					{ "name": "group", "title": "Nhóm" },
@@ -133,6 +132,9 @@
 					{ "name": "FIELD10", "title": "HD" }],
 				"rows": $.get("docs/content/rows.json")
 			});
+		});
+		$(function () {
+    		$(id).footable({pageSize:50});
 		});
 	</script>
 </body>
