@@ -122,7 +122,12 @@
 					{ "name": "FIELD7", "title": "HD" },
 					{ "name": "FIELD8", "title": "HD" },
 					{
-						"name": "FIELD9", "title": "HD", "type": "html"
+						"name": "FIELD9",
+						"title": "HD",
+						"formatter": function(value){
+							value = '<a href="' + value + '">' + value + '</a>';
+                return value;
+            }
 					},
 					{ "name": "FIELD10", "title": "HD" }],
 				"rows": $.get("docs/content/rows.json")
