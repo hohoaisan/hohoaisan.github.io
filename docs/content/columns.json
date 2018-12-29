@@ -8,14 +8,11 @@
   {"name":"FIELD7","title":"HD"},
   {"name":"FIELD8","title":"HD"},
   {
-    "name":"FIELD9","title":"HD",
-    "data": "weblink",
-         "render": function(data, type, row, meta){
-            if(type === 'display'){
-                data = '<a href="' + data + '">' + data + '</a>';
-            }
-            return data;
-         }
+    "name": "FIELD9",
+    "title": "HD",
+    "formatter": function(value) {
+      if (value!='') { value = '<a href="' + value + '" target="_blank"> GD </a>'; }
+              return value; }
   },
   {"name":"FIELD10","title":"HD"}
 ]

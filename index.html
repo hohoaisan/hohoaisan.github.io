@@ -112,23 +112,7 @@
 				"sorting": {
 					"enabled": true
 				},
-				"columns": [
-					{ "name": "name", "title": "Tên" },
-					{ "name": "group", "title": "Nhóm" },
-					{ "name": "type", "title": "Kiểu" },
-					{ "name": "status", "title": "Tình trạng" },
-					{ "name": "ep", "title": "Số tập" },
-					{ "name": "FIELD6", "title": "HD" },
-					{ "name": "FIELD7", "title": "HD" },
-					{ "name": "FIELD8", "title": "HD" },
-					{
-						"name": "FIELD9",
-						"title": "HD",
-						"formatter": function(value){
-							if (value!='') {value = '<a href="' + value + '" target="_blank"> GD </a>';}
-                			return value;}
-					},
-					{ "name": "FIELD10", "title": "HD" }],
+				"columns": $.get("docs/content/columns.json"),
 				"rows": $.get("docs/content/rows.json")
 			});
 		});
