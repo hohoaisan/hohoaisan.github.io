@@ -1,14 +1,13 @@
-
-		jQuery(function ($) {
-			$('.table').footable({
-				"paging": {
-					"enabled": true,
-					"limit": 10,
-					"size": 20
+jQuery(function ($) {
+	$('.table').footable({
+		"paging": {
+			"enabled": true,
+			"limit": 10,
+			"size": 20
 				},
-				"filtering": {
-					"enabled": true
-				},
+		"filtering": {
+			"enabled": true
+			},
 				"sorting": {
 					"enabled": true
 				},
@@ -54,7 +53,8 @@
 						"name": "480p1",
 						"title": "SD",
 						"formatter": function (value) {
-							if (value != '') { value = '<a href="' + value + '" target="_blank"> SD </a>'; }
+							if (value != '') { 
+								value = '<a href="' + value + '" target="_blank"> SD </a>'; }
 							return value;
 						}
 					},
