@@ -15,7 +15,7 @@ jQuery(function ($) {
 					{ "name": "name", "title": "Tên" },
 					{ "name": "group", "title": "Nhóm" },
 					{ "name": "type", "title": "Kiểu" },
-					{ "name": "status", "title": "Tình trạng" },
+					{ "name": "status", "title": "✓" },
 					{ "name": "ep", "title": "Số tập", "type": "text" },
 					{
 						"name": "1080p1",
