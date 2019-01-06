@@ -1,27 +1,18 @@
-<tr class="footable-filtering">
-    <p>hmmm</p>
-    <th colspan="11">
-        <form class="form-inline">
-            <div class="form-group footable-filtering-search"><label class="sr-only">Search</label>
-                <div class="input-group"><input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn"><button type="button" class="btn btn-primary"><span class="fooicon fooicon-search"></span></button><button
-                            type="button" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">Tên</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">Nhóm</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">Kiểu</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">Tình trạng</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">Số tập</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">FHD</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">FHD</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">HD</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">HD</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">SD</label></a></li>
-                            <li><a class="checkbox"><label><input type="checkbox" checked="checked">SD</label></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </th>
-</tr>
+$('table.demo2').on("floatThead", function(e, isFloated, $floatContainer){
+    if(isFloated){
+        $floatContainer.addClass("floated"); // the div containing the table containing the thead
+        $(this).addClass("floated"); // $table
+    } else {
+        $floatContainer.removeClass("floated");
+        $(this).removeClass("floated");
+    }
+})
+$('#change-dom').click(function(){
+    $(this).parent().remove();
+    $demo1.floatThead('reflow');
+});
+$('table.demo2, #options table').floatThead({
+    //the pageTop is a global function i have here, it takes care of making the table float under my floated nav
+    top: pageTop,
+    position: 'fixed'
+});
