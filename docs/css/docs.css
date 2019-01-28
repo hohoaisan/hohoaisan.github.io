@@ -6,7 +6,7 @@ body {
 }
 
 .jumbotron {
-	background: linear-gradient(120deg, #ffeb3b45, #f443361f);
+	background: linear-gradient(120deg, #ffeb3b45, #f443361f)!important;
 }
 
 .anchored {
