@@ -2,7 +2,7 @@ jQuery(function ($) {
 	$('.table').footable({
 		"paging": {
 			"enabled": true,
-			"limit": 10,
+			"limit": 3,
 			"size": 20
 		},
 		"filtering": {
