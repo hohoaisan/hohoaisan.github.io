@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div id="background_wrap"></div>
     <div class="container">
         <h2>NỘI QUY NHÓM FAYAKU</h2>
         <p>Để xác nhận việc bạn đã đọc nội quy, hãy đọc kỹ nội quy, sau đó điền <strong style="color: red">4 mã số màu
@@ -137,38 +138,43 @@
     ul {
         padding-left: 20px;
     }
-
-    body {
-        background-image: url(1.png);
-    }
-
-    body.scrolled1 {
+   
+    
+    #background_wrap.scrolled1 {
         background-image: url(2.png);
     }
 
-    body.scrolled2 {
+    #background_wrap.scrolled2 {
         background-image: url(3.png);
     }
 
-    @media (max-width: 767px) {
-
-        body {
-            background-attachment: initial;
-        }
+   
+    #background_wrap {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(1.png);
+        background-attachment: fixed;
+        background-position: bottom right;
+    }
 </style>
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script>
     jQuery(window).scroll(function () {
         var scrolledFromtop = jQuery(window).scrollTop();
         if (scrolledFromtop > 200 & scrolledFromtop < 600) {
-            jQuery('body').addClass('scrolled1');
+            jQuery('#background_wrap').addClass('scrolled1');
         } else {
-            jQuery('body').removeClass('scrolled1');
+            jQuery('#background_wrap').removeClass('scrolled1');
         }
         if (scrolledFromtop >= 600) {
-            jQuery('body').addClass('scrolled2');
+            jQuery('#background_wrap').addClass('scrolled2');
         } else {
-            jQuery('body').removeClass('scrolled2');
+            jQuery('#background_wrap').removeClass('scrolled2');
         }
     });
 </script>
