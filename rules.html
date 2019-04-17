@@ -135,9 +135,14 @@
     body {
         background: #ffffff url(1.png) no-repeat fixed right bottom;
     }
-
-</style><!--
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    body.scrolled1 {
+        background: #ffffff url(2.png) no-repeat fixed right bottom;
+    }
+    body.scrolled2 {
+        background: #ffffff url(3.png) no-repeat fixed right bottom;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script>
 jQuery(window).scroll(function(){
     var scrolledFromtop = jQuery(window).scrollTop();
@@ -152,5 +157,5 @@ jQuery(window).scroll(function(){
         jQuery('body').removeClass('scrolled2');
     }
 });
-</script>-->
+</script>
 </html>
