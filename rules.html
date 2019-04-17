@@ -145,12 +145,16 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 jQuery(window).scroll(function(){
-    var fromTopPx = 200; // distance to trigger
     var scrolledFromtop = jQuery(window).scrollTop();
-    if(scrolledFromtop > fromTopPx){
+    if(scrolledFromtop > 200 & scrolledFromtop <600){
         jQuery('body').addClass('scrolled1');
     }else{
         jQuery('body').removeClass('scrolled1');
+    }
+    if(scrolledFromtop >= 600){
+        jQuery('body').addClass('scrolled2');
+    }else{
+        jQuery('body').removeClass('scrolled2');
     }
 });
 </script>
