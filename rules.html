@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,14 +91,12 @@
             Tuỳ theo mức độ từ Nhắc nhở > Mute/Xoá bài > Kick > Ban
         </div>
     </div>
-    
 </body>
 <style>
     body {
-        padding-bottom: 0px;
-        background: #f8fcff url(http://yorimoi.com/images/common-background.png) repeat-y center top;
-        font-family: 'Roboto', sans-serif;
         padding-top: 30px;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0px;
     }
 
     h2,
@@ -135,6 +132,26 @@
     ul {
         padding-left: 20px;
     }
+    body {
+        background: #ffffff url(1.png) no-repeat fixed right bottom;
+    }
+    body.scrolled1 {
+        background: #ffffff url(2.png) no-repeat fixed right bottom;
+    }
+    body.scrolled2 {
+        background: #ffffff url(3.png) no-repeat fixed right bottom;
+    }
 </style>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+jQuery(window).scroll(function(){
+    var fromTopPx = 200; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTopPx){
+        jQuery('body').addClass('scrolled1');
+    }else{
+        jQuery('body').removeClass('scrolled1');
+    }
+});
+</script>
 </html>
