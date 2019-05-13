@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Học lập trình</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="format.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,10 +15,9 @@
         </div>
         <div class="navbar" id="navbar">
             <div class="navmenu container">
-                <a>TRANG CHỦ</a>
+                <a class="active">TRANG CHỦ</a>
                 <a>DANH MỤC 1</a>
                 <a>DANH MỤC 2</a>
-                <a>DANH MỤC 3</a>
                 <div class="search">
                     <form name="search" action="#" method="GET">
                         <input type="text" name="req" size="30" placeholder="Tìm kiếm gì đó...">
@@ -32,20 +27,25 @@
             </div>
         </div>
     </header>
-    <div class="container">
-
-        <div class="slider">
+    <div class="container main">
+        <div class="mainslider">
             <a>Slider</a>
         </div>
-        <fieldset>
-            <legend>Đăng nhập/Đăng kí </legend>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, asperiores laboriosam. Deserunt eum, itaque quibusdam modi nihil non excepturi nesciunt in molestias delectus tempora maiores commodi animi, illum fugit illo?</p>
-        </fieldset>
+        <div class="sliderhalf">
+            <a>Slider1</a>
+        </div>
+        <div class="sliderhalf">
+            <div class="linear_gray">
+                <p>Nhập môn cơ sở dữ liệu</p>
+            </div>
+        </div>
     </div>
 </body>
-<style>
-
-</style>
+<div>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="format.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</div>
 <script>
     window.onscroll = function () { myFunction() };
 

@@ -1,47 +1,62 @@
 * {
     margin: 0px;
-    font-family: 'Roboto','Arial', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
+
 .placeholder {
     width: 100%;
     height: 100px;
     background-color: #ecffb8;
 }
+
 .container {
     width: 1000px;
     margin: 0 auto;
+    transition: 0.5s;
 }
+
 .navbar {
     height: 50px;
     background: gray;
     box-sizing: border-box;
     box-shadow: #cacaca 0px 1px 2px 1px;
 }
+
 .navbar_top {
     position: fixed;
     width: 100%;
     top: 0px;
 }
+
 .navmenu a {
     float: left;
     display: block;
-    padding: 15px 10px 15px 10px;
-    overflow: hidden;
-    background-color: coral;
+    padding: 16px 10px 15px 10px;
+    background-color: rgb(107, 107, 107);
     margin-right: 2px;
+    box-sizing: border-box;
     color: white;
 }
+
+.navmenu a:hover {
+    background-color: #007946;
+    transition: 0.3s;
+}
+
 .search {
     float: right;
     padding: 5px 0px 5px 0px;
     height: 40px;
 }
+
 .search input[type="text"] {
     height: 40px;
+    width: 150px;
     box-sizing: border-box;
     border: none;
     padding: 5px;
 }
+
 .search input[type="submit"] {
     height: 40px;
     box-sizing: border-box;
@@ -49,12 +64,34 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.slider {
+
+.main > * {
+    float: left;
+}
+
+.mainslider {
     margin-top: 10px;
     width: 100%;
     height: 200px;
     background-color: #09ff99;
 }
-fieldset {
-    border-radius: 10px;
+
+.sliderhalf {
+    margin-top: 10px;
+    width: 50%;
+    height: 200px;
+    box-sizing: border-box;
+    background: url(hmm.jpg) no-repeat;
+}
+.linear_gray {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,#000000c5,#fafafa00) ;
+}
+.sliderhalf  p {
+    position: relative;
+    top:160px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
 }
