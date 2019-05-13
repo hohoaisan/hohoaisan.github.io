@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Học lập trình</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="format.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="placeholder">
+            <a>placeholder</a>
+        </div>
+        <div class="nav" id="nav-menu">
+            <div class="container">
+                <a>TRANG CHỦ</a>
+                <a>DANH MỤC 1</a>
+                <a>DANH MỤC 2</a>
+                <a>DANH MỤC 3</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="slider">
+            <a>Slider</a>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis laborum, assumenda eum quod dolore enim hic qui temporibus tenetur rerum illum est sed nostrum optio ipsum, quis aliquid veniam aliquam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis laborum, assumenda eum quod dolore enim hic qui temporibus tenetur rerum illum est sed nostrum optio ipsum, quis aliquid veniam aliquam.
+        </p>
+    </div>
+</body>
+<style>
+
+</style>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("nav-menu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        </script>
+</html>
