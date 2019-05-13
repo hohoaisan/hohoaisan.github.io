@@ -14,24 +14,38 @@
 .navbar {
     height: 50px;
     background: gray;
-    overflow: hidden;
+    box-sizing: border-box;
     box-shadow: #cacaca 0px 1px 2px 1px;
 }
-.navmenu a {
-    color: white;
-    display: inline-block;
-    padding: 15px 10px 15px 10px;
-    background-color: coral;
-    margin: 0px;
-}
-.sticky {
+.navbar_top {
     position: fixed;
     width: 100%;
     top: 0px;
 }
+.navmenu a {
+    float: left;
+    display: block;
+    padding: 15px 10px 15px 10px;
+    overflow: hidden;
+    background-color: coral;
+    margin-right: 2px;
+    color: white;
+}
 .search {
     float: right;
-    width: 100px;
+    padding: 5px 0px 5px 0px;
+    height: 40px;
+}
+.search input[type="text"] {
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+}
+.search input[type="submit"] {
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
 }
 .slider {
     margin-top: 10px;
