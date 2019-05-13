@@ -16,38 +16,48 @@
         <div class="placeholder">
             <a>placeholder</a>
         </div>
-        <div class="nav" id="nav-menu">
-            <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="navmenu container">
                 <a>TRANG CHỦ</a>
                 <a>DANH MỤC 1</a>
                 <a>DANH MỤC 2</a>
                 <a>DANH MỤC 3</a>
             </div>
+            <div class="search">
+                    <form name="search" action="#" method="GET">
+                        <input type="text" name="req" size="30" placeholder="Tìm kiếm gì đó...">
+                        <input type="submit" value="Tìm">
+                    </form>
+                </div>
         </div>
     </header>
     <div class="container">
+        
         <div class="slider">
             <a>Slider</a>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis laborum, assumenda eum quod dolore enim hic qui temporibus tenetur rerum illum est sed nostrum optio ipsum, quis aliquid veniam aliquam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis laborum, assumenda eum quod dolore enim hic qui temporibus tenetur rerum illum est sed nostrum optio ipsum, quis aliquid veniam aliquam.
-        </p>
+        <fieldset>
+            <legend>Đăng nhập/Đăng kí </legend>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, asperiores laboriosam. Deserunt eum, itaque quibusdam modi nihil non excepturi nesciunt in molestias delectus tempora maiores commodi animi, illum fugit illo?</p>
+        </fieldset>
     </div>
 </body>
 <style>
 
 </style>
 <script>
-window.onscroll = function() {myFunction()};
+    window.onscroll = function () { myFunction() };
 
-var header = document.getElementById("nav-menu");
-var sticky = header.offsetTop;
+    var header = document.getElementById("navbar");
+    var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-        </script>
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+
 </html>
