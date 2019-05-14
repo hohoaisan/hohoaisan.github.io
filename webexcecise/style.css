@@ -3,23 +3,41 @@
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+.ontop {
+    position: fixed;
+    right: 5%;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    color: white;
+    text-decoration: none;
+}
+
 .placeholder {
     width: 100%;
     height: 100px;
     background-color: #ecffb8;
 }
-
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .container {
     width: 1000px;
     margin: 0 auto;
     transition: 0.5s;
+    position: relative;
 }
 
 .navbar {
     height: 50px;
     background: gray;
     box-sizing: border-box;
-    box-shadow: #cacaca 0px 1px 2px 1px;
+    box-shadow: #cacaca44 0px 1px 2px 1px;
+    z-index: 1;
 }
 
 .navbar_top {
@@ -28,7 +46,7 @@
     top: 0px;
 }
 
-.navmenu a {
+.navmenu>a {
     float: left;
     display: block;
     padding: 16px 10px 15px 10px;
@@ -36,17 +54,20 @@
     margin-right: 2px;
     box-sizing: border-box;
     color: white;
+    z-index: 0;
 }
 
-.navmenu a:hover {
+.navmenu>a:hover {
     background-color: #007946;
     transition: 0.3s;
 }
 
 .search {
-    float: right;
     padding: 5px 0px 5px 0px;
     height: 40px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
 }
 
 .search input[type="text"] {
@@ -65,7 +86,7 @@
     padding-right: 10px;
 }
 
-.main > * {
+.main>* {
     float: left;
 }
 
@@ -74,6 +95,11 @@
     width: 100%;
     height: 200px;
     background-color: #09ff99;
+    overflow: hidden;
+}
+
+.mainslider img {
+    width: 100%
 }
 
 .sliderhalf {
@@ -81,17 +107,37 @@
     width: 50%;
     height: 200px;
     box-sizing: border-box;
-    background: url(hmm.jpg) no-repeat;
+    overflow: hidden;
+    position: relative;
 }
+
+.sliderhalf img {
+    width: 100%;
+    position: absolute;
+}
+
 .linear_gray {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top,#000000c5,#fafafa00) ;
+    background-image: linear-gradient(to top, #000000c5, #fafafa00);
 }
-.sliderhalf  p {
+
+.sliderhalf p {
     position: relative;
-    top:160px;
+    top: 160px;
     left: 30px;
     color: white;
     font-size: 20px;
+}
+
+.flowbox {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(224, 224, 224);
+    clear: both;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
 }
