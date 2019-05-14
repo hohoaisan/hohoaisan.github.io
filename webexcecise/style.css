@@ -71,7 +71,7 @@ h1 {
 
 .navmenu>a:hover, a[class="active"] {
     background-color: #007946;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .search {
@@ -116,7 +116,7 @@ h1 {
 
 .sliderhalf {
     margin-top: 10px;
-    width: 50%;
+    width: 49.4%;
     height: 200px;
     box-sizing: border-box;
     overflow: hidden;
@@ -127,8 +127,13 @@ h1 {
     width: 100%;
     position: absolute;
 }
-
-.linear_gray {
+.sliderhalf-left {
+    float: left;
+}
+.sliderhalf-right {
+    float: right;
+}
+.slider-linear {
     position: absolute;
     width: 100%;
     height: 100%;
