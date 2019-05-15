@@ -75,7 +75,7 @@
         text-decoration: none;
     }
 
-    .navmenu a:hover, .active {
+    .navmenu a:hover, a.active {
         background-color: rgba(96, 91, 158);
         transition: 1s;
     }
