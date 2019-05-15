@@ -16,19 +16,28 @@
         <div class="placeholder" id="ontop">
             <h1 class="container">Hyoukanahanazawa</h1>
         </div>
-        <div class="navbar" id="navbar">
+        <nav id="navbar">
             <div class="navmenu container">
-                <a class="active" href="#">TRANG CHỦ</a>
-                <a href="#">DANH MỤC 1</a>
-                <a href="#">DANH MỤC 2</a>
+                <div id="dropdown">
+                    <div id="menu">
+                        <span class="menu-border"></span>
+                        <span class="menu-border"></span>
+                        <span class="menu-border"></span>
+                    </div>
+                    <div id="dropdown-content">
+                        <a class="active" href="#">TRANG CHỦ</a>
+                        <a href="#">DANH MỤC 1</a>
+                        <a href="#">DANH MỤC 2</a>
+                    </div>
+                </div>
                 <div class="search">
                     <form name="search" action="#" method="GET">
                         <input type="text" name="req" size="30" placeholder="Tìm kiếm gì đó...">
-                        <input type="submit" value="TÌM">
+                        <!-- input type="submit" value="TÌM">-->
                     </form>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="container main">
         <div class="mainslider zoom">
@@ -50,33 +59,53 @@
         <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis quia est nihil placeat voluptatem natus ex, ratione fugit, sunt atque consectetur quas magnam ut repudiandae culpa esse, magni autem.
         </p>
     </div>
-    <div class="container main">
-        <div class="sliderhalf zoom">
-            <img src="hmm.jpg">
-            <div class="slider-linear"></div>
-        </div>
-        <div class="sliderhalf zoom">
-            <img src="hmm.jpg">
-            <div class="slider-linear">
-                <p>Nhập môn cơ sở dữ liệu</p>
-            </div>
-        </div>
-    </div>
+
     <a class="totop" href="#ontop"><span></span></a>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
 </body>
 <script>
+    //Đưa navbar lên đầu
     window.onscroll = function () { myFunction() };
-
     var header = document.getElementById("navbar");
     var sticky = header.offsetTop;
-
     function myFunction() {
         if (window.pageYOffset > sticky) {
             header.classList.add("navbar_top");
         } else {
             header.classList.remove("navbar_top");
         }
-    }
+    };
+    //Điều khiển nút Menu
+    var wmaxsize = 650;
+    var menu = document.getElementById("menu")
+    var x = document.getElementById("dropdown-content")
+    window.onresize = function dropdown_hide_onresize() {
+        var w = window.innerWidth;
+        if (w <= wmaxsize) {
+            x.style.display = "none";
+        } else { x.style.display = "block" }
+    };
+    document.onclick = function toggle_dropdown() {
+        var w = window.innerWidth;
+        a = window.event.srcElement.id;
+        b = window.event.srcElement.className;
+        if (w <= wmaxsize) {
+            if (a === "menu" || b === "menu-border") {
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    };
 </script>
 
 </html>
