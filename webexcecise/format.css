@@ -22,6 +22,10 @@
         width: 100%;
         clear: both;
     }
+    .footer-center {
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (max-width: 650px) {

@@ -210,7 +210,7 @@
         background-color: gray;
     }
     .footer {
-        width: 32%;
+        width: 33%;
         box-sizing: border-box;
         height: 130px;
         background-color: rgb(153, 0, 255);
@@ -222,5 +222,5 @@
         float: right;
     }
     .footer-center {
-        margin-left: 2%;
+        margin-left: 0.5%;
     }
