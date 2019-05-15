@@ -40,7 +40,7 @@
         top: 50px;
     }
     #dropdown-content a {
-        width: 100%;
+        min-width: 300px;
         box-shadow: #0000002a 0px 1px 2px 1px;
     }
 }
