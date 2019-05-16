@@ -51,6 +51,8 @@
         left: 0;
     }
     #dropdown-content a {
+        text-align: left;
+        text-indent: 1em;
         min-width: 300px;
         box-shadow: #0000002a 0px 1px 2px 1px;
     }

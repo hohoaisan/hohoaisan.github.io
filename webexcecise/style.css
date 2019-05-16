@@ -113,10 +113,12 @@
         text-decoration: none;
         display: block;
         float: left;
-        margin-right: 2px;
-        padding: 16px 10px 15px 10px;
+        text-align: center;
+        min-width: 80px;
+        margin-right: 1px;
+        padding: 16px 5px 15px 5px;
         box-sizing: border-box;
-        background-color: rgb(55, 50, 119);
+        background-color: rgb(61, 56, 128);
         transition: 1s;
         z-index: 0;
     }
