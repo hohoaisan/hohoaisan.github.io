@@ -48,6 +48,7 @@
         position: absolute;
         display: none;
         top: 50px;
+        left: 0;
     }
     #dropdown-content a {
         min-width: 300px;

@@ -16,7 +16,7 @@
         <div class="placeholder" id="ontop">
             <h1 class="container">Hyoukanahanazawa</h1>
         </div>
-        <nav id="navbar main">
+        <nav id="navbar">
             <div id="navmenu" class="container">
                 <div id="menu">
                     <span class="menu-border"></span>
@@ -96,10 +96,10 @@
         var w = window.innerWidth;
         if (w <= wmaxsize) {
             x.style.display = "none";
-            document.getElementById("navmenu").classList.remove("container")
+           // document.getElementById("navmenu").classList.remove("container")
         } else {
             x.style.display = "block";
-            document.getElementById("navmenu").classList.add("container")
+            //document.getElementById("navmenu").classList.add("container")
         }
     };
     //Khi click vào nút #menu thì dropdown-content sẽ được xổ xuống, nếu click lại nó hoặc click ra bên ngoài thì nó sẽ tự tắt đi
