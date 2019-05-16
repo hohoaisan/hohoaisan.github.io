@@ -121,6 +121,9 @@
         z-index: 0;
     }
 
+    #navmenu {
+        overflow: hidden;
+    }
     .search {
         position: absolute;
         height: 50px;

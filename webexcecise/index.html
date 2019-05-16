@@ -92,14 +92,16 @@
     var wmaxsize = 650;
     var menu = document.getElementById("menu")
     var x = document.getElementById("dropdown-content")
+    if (window.innerWidth <= wmaxsize) {
+    document.getElementById("navmenu").classList.remove("container")}
     window.onresize = function dropdown_hide_onresize() {
         var w = window.innerWidth;
         if (w <= wmaxsize) {
             x.style.display = "none";
-           // document.getElementById("navmenu").classList.remove("container")
+            document.getElementById("navmenu").classList.remove("container")
         } else {
             x.style.display = "block";
-            //document.getElementById("navmenu").classList.add("container")
+            document.getElementById("navmenu").classList.add("container")
         }
     };
     //Khi click vào nút #menu thì dropdown-content sẽ được xổ xuống, nếu click lại nó hoặc click ra bên ngoài thì nó sẽ tự tắt đi
