@@ -41,7 +41,7 @@
     }
     #dropdown {
         float: left;
-        position: relative;
+        position: absolute;
         z-index: 5;
     }
     #dropdown-content {
@@ -54,5 +54,3 @@
         box-shadow: #0000002a 0px 1px 2px 1px;
     }
 }
-
-@media only screen and (max-width: 550px) {}
