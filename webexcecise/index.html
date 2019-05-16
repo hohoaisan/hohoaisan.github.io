@@ -17,36 +17,29 @@
             <h1 class="container">Hyoukanahanazawa</h1>
         </div>
         <nav id="navbar">
-            <div id="navmenu" class="container">
-                <div id="menu">
-                    <span class="menu-border"></span>
-                    <span class="menu-border"></span>
-                    <span class="menu-border"></span>
-                </div>
-                <div id="logo">
-                    <img src="icon.png" width="40px" height="auto">
-                    <a>HOWKTEAM</a>
-                </div>
+            <div class="navmenu container">
                 <div id="dropdown">
+                    <div id="menu">
+                        <span class="menu-border"></span>
+                        <span class="menu-border"></span>
+                        <span class="menu-border"></span>
+                    </div>
                     <div id="dropdown-content">
-                        <!--<a class="active" href="#">TRANG CHỦ</a>-->
-                        <a href="https://google.com">DANH MỤC 1</a>
+                        <a class="active" href="#">TRANG CHỦ</a>
+                        <a href="#">DANH MỤC 1</a>
                         <a href="#">DANH MỤC 2</a>
-                        <a href="#">DANH MỤC 3</a>
-                        <a href="#">DANH MỤC 4</a>
-                        <a href="#">DANH MỤC 5</a>
                     </div>
                 </div>
                 <div class="search">
-                    <form name="search" action="https://www.google.com/search" method="GET" target="_blank">
-                        <input type="text" name="q" placeholder="Tìm kiếm gì đó...">
+                    <form name="search" action="#" method="GET">
+                        <input type="text" name="req" size="30" placeholder="Tìm kiếm gì đó...">
                         <!-- input type="submit" value="TÌM">-->
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container main">
         <div class="mainslider zoom">
             <img src="hmm.jpg">
             <a>Slider</a>
@@ -66,6 +59,7 @@
         <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis quia est nihil placeat voluptatem natus ex, ratione fugit, sunt atque consectetur quas magnam ut repudiandae culpa esse, magni autem.
         </p>
     </div>
+
     <a class="totop" href="#ontop"><span></span></a>
     <footer>
         <div class="container">
@@ -87,8 +81,7 @@
             header.classList.remove("navbar_top");
         }
     };
-    //Điều khiển nút Menu, khi cửa sổ thay đổi thì nếu dropdown-content đang được xổ xuống thì phải tắt nó đi
-    //Khi cửa sổ nhỏ hơn giới hạn wmaxsize thì lập tức xoá class container của #navmenu để nút #menu và .search nằm dàn ra sát màn hình
+    //Điều khiển nút Menu
     var wmaxsize = 650;
     var menu = document.getElementById("menu")
     var x = document.getElementById("dropdown-content")
@@ -96,13 +89,8 @@
         var w = window.innerWidth;
         if (w <= wmaxsize) {
             x.style.display = "none";
-            document.getElementById("navmenu").classList.remove("container")
-        } else {
-            x.style.display = "block";
-            document.getElementById("navmenu").classList.add("container")
-        }
+        } else { x.style.display = "block" }
     };
-    //Khi click vào nút #menu thì dropdown-content sẽ được xổ xuống, nếu click lại nó hoặc click ra bên ngoài thì nó sẽ tự tắt đi
     document.onclick = function toggle_dropdown() {
         var w = window.innerWidth;
         a = window.event.srcElement.id;
