@@ -229,7 +229,7 @@
     }
 
     .footer {
-        width: 33%;
+        width: 32%;
         box-sizing: border-box;
         height: 130px;
         background-color: rgb(153, 0, 255);
@@ -244,5 +244,5 @@
     }
 
     .footer-center {
-        margin-left: 0.5%;
+        margin-left: 2%;
     }
