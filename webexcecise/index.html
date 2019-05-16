@@ -93,7 +93,8 @@
     var menu = document.getElementById("menu")
     var x = document.getElementById("dropdown-content")
     if (window.innerWidth <= wmaxsize) {
-    document.getElementById("navmenu").classList.remove("container")}
+    document.getElementById("navmenu").classList.remove("container");
+    x.style.display = "none"}
     window.onresize = function dropdown_hide_onresize() {
         var w = window.innerWidth;
         if (w <= wmaxsize) {
@@ -111,8 +112,10 @@
         b = window.event.srcElement.className;
         if (w <= wmaxsize) {
             if (a === "menu" || b === "menu-border") {
+                
                 if (x.style.display === "none") {
                     x.style.display = "block";
+
                 } else {
                     x.style.display = "none";
                 }
