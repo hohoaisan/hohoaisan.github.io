@@ -45,7 +45,7 @@
         z-index: 5;
     }
     #dropdown-content {
-        position: absolute;
+        position: relative;
         display: none;
         top: 50px;
     }
