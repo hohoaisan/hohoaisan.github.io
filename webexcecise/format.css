@@ -22,6 +22,10 @@
         width: 100%;
         clear: both;
     }
+    .footer-center {
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -37,18 +41,17 @@
     }
     #dropdown {
         float: left;
-        position: relative;
+        position: absolute;
         z-index: 5;
     }
     #dropdown-content {
         position: absolute;
         display: none;
         top: 50px;
+        z-index: 9999;
     }
     #dropdown-content a {
         min-width: 300px;
         box-shadow: #0000002a 0px 1px 2px 1px;
     }
 }
-
-@media only screen and (max-width: 550px) {}
