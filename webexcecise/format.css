@@ -45,15 +45,17 @@
         z-index: 5;
     }
     #dropdown-content {
-        position: absolute;
+        position: relative;
         display: none;
         top: 50px;
         left: 0;
+        width: 100%;
+        background: rgba(55, 50, 119, 0.95)
     }
     #dropdown-content a {
         text-align: left;
-        text-indent: 1em;
-        min-width: 300px;
+        text-indent: 2em;
+        width: 100%;
         box-shadow: #0000002a 0px 1px 2px 1px;
     }
 }
