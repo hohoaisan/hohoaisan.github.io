@@ -52,19 +52,17 @@
         height: 50px;
         box-sizing: border-box;
         box-shadow: #0000002a 0px 1px 2px 1px;
-        background: rgba(55, 50, 119, 0.95);
+        background: rgba(55, 50, 119);
         z-index: 1;
     }
 
-    .navbar_top {
+    .navbar_top{
         position: fixed;
         width: 100%;
-        top: 0px;
+        top:0px;
     }
-
-    #navmenu a:hover, a.active {
-        background-color: rgba(96, 91, 158);
-        transition: 1s;
+    .editmargin {
+        margin-top: 60px;
     }
     #menu {
         display: none;
@@ -101,30 +99,43 @@
     }
 
     #logo * {
-        color: white;
         display: block;
         position: relative;
         float: left;
         top: 50%;
         transform: translateY(-50%);
+        margin-left: 10px;
     }
-    #dropdown-content a {
+    
+    #logo a {
         color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    #dropdown-content>a {
+        color: rgb(194, 194, 194);
         text-decoration: none;
         display: block;
         float: left;
         text-align: center;
-        min-width: 80px;
         margin-right: 1px;
-        padding: 16px 5px 15px 5px;
+        padding: 16px 10px 15px 10px;
         box-sizing: border-box;
-        background-color: rgb(61, 56, 128);
+        background-color: rgba(55, 50, 119);
         transition: 1s;
         z-index: 0;
     }
+
+    #dropdown-content a:hover, a.active {
+        color: white;
+        transition: 0.5s;
+    }
+
     #navmenu {
         overflow: hidden;
     }
+
     .search {
         position: absolute;
         height: 50px;
