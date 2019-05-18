@@ -13,9 +13,6 @@
 
 <body>
     <header>
-        <div class="placeholder" id="ontop">
-            <h1 class="container">Coder.learn</h1>
-        </div>
         <nav id="navbar">
             <div id="navmenu" class="container">
                 <div id="menu">
@@ -30,10 +27,10 @@
                 <div id="dropdown">
                     <div id="dropdown-content">
                         <!--<a class="active" href="#">TRANG CHỦ</a>-->
-                        <a href="#">Docs</a>
-                        <a href="#">Updates</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Blog</a>
+                        <a href="#">Hỏi đáp</a>
+                        <a href="#">Tài liệu</a>
+                        <a href="#">Về Coder.lean</a>
+                        <a href="#">Phản hồi</a>
                     </div>
                 </div>
                 <div class="search">
@@ -45,11 +42,13 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="mainslider zoom">
-            <img src="hmm.jpg">
-            <a>Slider</a>
+    <div class="mainslider">
+        <div class="container content">
+            <h1>Hàng trăm khoá học miễn phí</h1>
+            <p>Được xây dựng bởi team Coder.learn và cộng đồng lập trình viên trên khắp Việt Nam, những khoá học từ cơ bản đến nâng cao đang chờ bạn khám phá!</p>
         </div>
+    </div>
+    <div class="container">
         <div class="sliderhalf sliderhalf-left zoom">
             <img src="hmm.jpg">
             <div class="slider-linear"></div>
@@ -72,21 +71,12 @@
             <div class="footer footer-center">2</div>
             <div class="footer footer-right">3</div>
         </div>
+        <div class="container">
+
+        </div>
     </footer>
 </body>
 <script>
-    //Đưa navbar lên đầu
-    window.onscroll = function () { myFunction() };
-    var header = document.getElementById("navbar");
-    var sticky = header.offsetTop;
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("navbar_top");
-
-        } else {
-            header.classList.remove("navbar_top");
-        }
-    };
     //Điều khiển nút Menu, khi cửa sổ thay đổi thì nếu dropdown-content đang được xổ xuống thì phải tắt nó đi
     //Khi cửa sổ nhỏ hơn giới hạn wmaxsize thì lập tức xoá class container của #navmenu để nút #menu và .search nằm dàn ra sát màn hình
     var wmaxsize = 650;
