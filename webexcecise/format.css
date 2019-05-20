@@ -5,7 +5,20 @@
         transition: 0.5s;
     }
 }
-
+@media only screen and (max-width: 950px) {
+    .course-box {
+        width: 48%;
+    }
+    .course-box:nth-child(odd){
+        margin-right: 0px;
+    }
+    .course-box:nth-child(even) {
+        margin-right: 2%;
+    }
+    .course-box:nth-child(n+8) {
+        display: none;
+    }
+}
 @media only screen and (max-width: 750px) {
     .container {
         width: 93%;
@@ -17,6 +30,7 @@
         width: 100%;
         transition: 0.5s;
     }
+    
     .footer {
         margin-left: 0px;
         width: 100%;
