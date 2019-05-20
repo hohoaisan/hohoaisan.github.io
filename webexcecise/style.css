@@ -164,6 +164,7 @@
 
     .mainslider h1, .mainslider p {
         color: white;
+        text-shadow: 0px 0px 5px black;
     }
 
     .mainslider p {
@@ -260,7 +261,7 @@
         font-family: 'Segoe UI', sans-serif;
     }
     footer ul {
-        padding-left: 20px;
+        padding-left: 10px;
     }
     footer ul li {
         list-style: none;
