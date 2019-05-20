@@ -33,8 +33,13 @@
                         <a href="#">Phản hồi</a>
                     </div>
                 </div>
-                <div class="search">
-                    <form name="search" action="https://www.google.com/search" method="GET" target="_blank">
+                <div class="account">
+                    <img src="https://cdn.viblo.asia/_nuxt/img/0bca52a.png">
+                    <span></span>
+                </div>
+                <div class="mini-search">
+                    <img src="images/search.png">
+                    <form name="mini-search" action="https://www.google.com/search" method="GET" target="_blank">
                         <input type="text" name="q" placeholder="Tìm kiếm gì đó...">
                         <!-- input type="submit" value="TÌM">-->
                     </form>
@@ -42,29 +47,50 @@
             </div>
         </nav>
     </header>
-    <div class="mainslider">
-        <div class="container content">
-            <h1>Hàng trăm khoá học miễn phí</h1>
-            <p>Được xây dựng bởi team Coder.learn và cộng đồng lập trình viên trên khắp Việt Nam, những khoá học từ cơ bản đến nâng cao đang chờ bạn khám phá!</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="sliderhalf sliderhalf-left zoom">
-            <img src="hmm.jpg">
-            <div class="slider-linear"></div>
-        </div>
-        <div class="sliderhalf sliderhalf-right zoom">
-            <img src="hmm.jpg">
-            <div class="slider-linear">
-                <p>Nhập môn cơ sở dữ liệu</p>
+    <div class="wrapper">
+        <div class="mainslider">
+            <div class="container content">
+                <h1>Hàng trăm khoá học miễn phí</h1>
+                <p>Được xây dựng bởi team Coder.learn và cộng đồng lập trình viên trên khắp Việt Nam, những khoá học từ cơ bản đến nâng cao đang chờ bạn khám phá!</p>
+                <div class="search">
+                        <form name="search" action="https://www.google.com/search" method="GET" target="_blank">
+                            <input type="text" name="q" placeholder="Tìm kiếm gì đó...">
+                            <!-- input type="submit" value="TÌM">-->
+                        </form>
+                    </div>
             </div>
         </div>
+        <div class="container">
+            <h1>Khoá học mới cập nhật</h1>
+            <div class="cources">
+                <div class="course-box">
+
+                </div>
+                <div class="course-box">
+
+                </div>
+                <div class="course-box">
+
+                </div>
+            </div>
+            <!--
+            <div class="sliderhalf sliderhalf-left zoom">
+                <img src="hmm.jpg">
+                <div class="slider-linear"></div>
+            </div>
+            <div class="sliderhalf sliderhalf-right zoom">
+                <img src="hmm.jpg">
+                <div class="slider-linear">
+                    <p>Nhập môn cơ sở dữ liệu</p>
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="flowbox">
+            <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis quia est nihil placeat voluptatem natus ex, ratione fugit, sunt atque consectetur quas magnam ut repudiandae culpa esse, magni autem.
+            </p>
+        </div>
     </div>
-    <div class="flowbox">
-        <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis quia est nihil placeat voluptatem natus ex, ratione fugit, sunt atque consectetur quas magnam ut repudiandae culpa esse, magni autem.
-        </p>
-    </div>
-    <a class="totop" href="#totop"><span></span></a>
     <footer>
         <div class="container">
             <div class="footer footer-left">
@@ -93,11 +119,12 @@
                 </ul>
             </div>
         </div>
-        <hr class="container">
         <div class="footer-bar">
+            <hr class="container">
             <p class="container">© 2019 Coder.learn. All rights reserved.</p>
         </div>
     </footer>
+    <a class="totop" href="#totop"><span></span></a>
 </body>
 <script>
     //Điều khiển nút Menu, khi cửa sổ thay đổi thì nếu dropdown-content đang được xổ xuống thì phải tắt nó đi
