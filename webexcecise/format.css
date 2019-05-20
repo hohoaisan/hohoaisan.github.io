@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 1200px) {
     .container {
         width: 90%;
@@ -5,19 +6,20 @@
         transition: 0.5s;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
     .course-box {
-        width: 48%;
+        width: 32%
     }
-    .course-box:nth-child(odd){
-        margin-right: 0px;
-    }
-    .course-box:nth-child(even) {
+    .course-box:nth-child(4n) {
         margin-right: 2%;
     }
-    .course-box:nth-child(n+8) {
+    .course-box:nth-child(3n) {
+        margin-right: 0px;
+    }
+    .course-box:nth-child(1n+10){
         display: none;
     }
+    
 }
 @media only screen and (max-width: 750px) {
     .container {
@@ -71,5 +73,17 @@
         text-indent: 2em;
         width: 100%;
         box-shadow: #0000002a 0px 1px 2px 1px;
+    }
+    .course-box {
+        width: 49%;
+    }
+    .course-box:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .course-box:nth-child(2n) {
+        margin-right:0px;
+    }
+    .course-box:nth-child(1n+7){
+        display: none;
     }
 }
