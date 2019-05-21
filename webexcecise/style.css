@@ -2,7 +2,9 @@
         margin: 0px;
         font-family: 'Roboto', 'Arial', sans-serif;
     }
-
+    a:link {
+        text-decoration: none;
+    }
     html {
         scroll-behavior: smooth;
     }
