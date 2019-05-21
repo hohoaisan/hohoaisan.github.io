@@ -287,7 +287,7 @@ h1.title {
     font-weight: 320;
     font-size: 2rem;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Segoe UI', sans-serif
 }
 
@@ -373,7 +373,7 @@ h1.title {
     text-decoration: none;
     display: block;
     width: 300px;
-    background-color: #151c25;
+    background-color: #1d2b3d;
     margin: 0 auto;
     text-align: center;
     font-size: .9em;
@@ -426,7 +426,21 @@ h1.title {
 .post p.info {
     font-size: .8em
 }
-
+h4 a {
+    display: block;
+    font-weight: 300;
+    color: #00918c;
+    background: rgba(128, 128, 128, 0.075);
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+h4 a:hover {
+    background-color: #00918c1e;
+}
 .flowbox {
     width: 100%;
     margin-top: 30px;
@@ -532,7 +546,7 @@ footer ul li a {
     text-align: center
 }
 
-.container::after, .container::before, .courses::after, .post::after, footer::after {
+.container::after, .container::before, .courses::after, .posts::after, footer::after {
     content: "";
     clear: both;
     display: table
