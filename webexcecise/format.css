@@ -1,64 +1,57 @@
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
     .container {
         width: 90%;
         margin: 0 auto;
-        transition: 0.5s;
+        transition: .5s
     }
 }
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width:1000px) {
     .course-box {
         width: 32%
     }
     .course-box:nth-child(4n) {
-        margin-right: 2%;
+        margin-right: 2%
     }
     .course-box:nth-child(3n) {
-        margin-right: 0px;
+        margin-right: 0
     }
-    .course-box:nth-child(1n+7){
-        display: none;
-    }
-    
-}
-@media only screen and (max-width: 750px) {
-    .container {
-        width: 93%;
-        margin: 0 auto;
-        transition: 0.5s;
-    }
-    .sliderhalf {
-        clear: both;
-        width: 100%;
-        transition: 0.5s;
-    }
-    
-    .footer {
-        margin-left: 0px;
-        width: 100%;
-        clear: both;
-    }
-    .footer-center {
-        margin-top:5px;
-        margin-bottom: 5px;
+    .course-box:nth-child(1n+7) {
+        display: none
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width:750px) {
+    .container {
+        width: 93%;
+        margin: 0 auto;
+        transition: .5s
+    }
+    .footer {
+        margin-left: 0;
+        width: 100%;
+        clear: both
+    }
+    .footer-center {
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+}
+
+@media only screen and (max-width:650px) {
     .container {
         width: 95%;
         margin: 0 auto;
-        transition: 0.5s;
+        transition: .5s
     }
-    
     #menu {
         display: block;
-        float: left;
+        float: left
     }
     #dropdown {
         float: left;
         position: absolute;
-        z-index: 5;
+        z-index: 5
     }
     #dropdown-content {
         position: relative;
@@ -66,25 +59,25 @@
         top: 50px;
         left: 0;
         width: 100%;
-        background: rgba(55, 50, 119, 0.95)
+        background: rgba(55, 50, 119, .95)
     }
     #dropdown-content a {
         text-align: left;
         text-indent: 2em;
         width: 100%;
-        box-shadow: #0000002a 0px 1px 2px 1px;
-        background-color: rgba(55, 50, 119);
+        box-shadow: #0000002a 0 1px 2px 1px;
+        background-color: rgba(55, 50, 119)
     }
     .course-box {
-        width: 49%;
+        width: 49%
     }
     .course-box:nth-child(3n) {
-        margin-right: 2%;
+        margin-right: 2%
     }
     .course-box:nth-child(2n) {
-        margin-right:0px;
+        margin-right: 0
     }
-    .course-box:nth-child(1n+7){
-        display: none;
+    .course-box:nth-child(1n+7) {
+        display: none
     }
 }
