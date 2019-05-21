@@ -292,7 +292,6 @@
         position: relative;
         box-sizing: border-box;
         border-radius: 2px;
-        transition: 0.5s;
     }
 
     .course-box:hover {
