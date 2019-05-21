@@ -1,3 +1,5 @@
+/*Removed unused CSS by purifycss.online*/
+
 @media only screen and (max-width:1200px) {
     .container {
         width: 90%;
@@ -79,5 +81,8 @@
     }
     .course-box:nth-child(1n+7) {
         display: none
+    }
+    .flowbox-content h3 {
+        width: 100%;
     }
 }

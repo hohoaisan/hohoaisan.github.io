@@ -1,3 +1,5 @@
+/*Removed unused CSS by purifycss.online*/
+
 * {
     margin: 0;
     font-family: Roboto, Arial, sans-serif
@@ -435,17 +437,21 @@ h1.title {
 
 .flowbox-content {
     text-align: center;
-    margin-top: 60px
+    margin-top: 50px
 }
 
 .flowbox-content h1, .flowbox-content h3 {
-    font-weight: 50
+    font-weight: 400
 }
-
+.flowbox-content h3 {
+    text-align: center;
+    width: 500px;
+    margin: 10px auto 0px auto;
+}
 .flowbox-content a {
     width: 100px;
     display: block;
-    margin: 25px auto 60px auto;
+    margin: 25px auto 50px auto;
     padding: 10px 15px 10px 15px;
     background: #286090;
     color: #fff;
