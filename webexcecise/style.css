@@ -208,12 +208,10 @@
         box-sizing: border-box;
         border: none;
     }
-
     .wrapper {
         min-height: 100%;
-        margin-bottom: -255px;
+        margin-bottom: 0px;
     }
-
     .mainslider {
         width: 100%;
         margin-top: 50px;
@@ -283,9 +281,9 @@
     }
 
     .course-box {
+        float: left;
         width: 23.5%;
         height: 240px;
-        float: left;
         box-sizing: border-box;
         border-bottom: 3px solid rgb(0, 172, 0);
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -307,6 +305,7 @@
         display: block;
         width: 100%;
     }
+
     .course-box .source {
         background: yellow;
         text-align: center;
@@ -318,36 +317,37 @@
         top: 10px;
         left: -5px;
     }
+
     .text-box {
         width: 100%;
         height: 100%;
         box-sizing: border-box;
         padding: 10px;
     }
-    
+
     .text-box .title {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
+
     .text-box .star span {
-        display:inline-block;
+        display: inline-block;
     }
+
     .text-box .star span img {
         width: 16px;
         height: 16px;
     }
+
     .text-box .small-category {
         position: absolute;
         right: 10px;
         bottom: 10px;
     }
-    .text-box .small-category a{
+
+    .text-box .small-category a {
         color: gray;
-    }
-    .more {
-        float: left;
-        width: 100%;
     }
 
     .more a {
@@ -363,28 +363,30 @@
         font-size: 0.9em;
     }
 
+
     .flowbox {
         width: 100%;
-        float: left;
         margin-top: 30px;
         box-sizing: border-box;
         background: url(https://visualstudio.microsoft.com/wp-content/uploads/2019/02/VS_SiteHeader_1600x500.jpg) no-repeat center center;
         background-size: cover;
         text-align: center;
-        position: relative;
     }
+
     .flowbox-content {
         margin-top: 60px;
     }
+
     .flowbox-content h1, .flowbox-content h3 {
         font-weight: 50;
     }
+
     .flowbox-content p {
-        float: left;
         width: 100%;
         margin-top: 25px;
         margin-bottom: 60px;
     }
+
     .flowbox-content p a {
         padding: 10px 15px 10px 15px;
         background: #286090;
@@ -392,10 +394,10 @@
         border-radius: 5px;
         font-size: 1.2rem;
     }
+
     footer {
         bottom: 0px;
         width: 100%;
-        float: left;
         margin-top: 10px;
         background-color: #0B1A33;
     }
@@ -458,4 +460,9 @@
         transform: translateY(-50%);
         color: #D3DBE1;
         text-align: center;
+    }
+    .container::after, .container::before, .courses::after, footer::after {
+        content: "";
+        clear: both;
+        display: table;
     }
