@@ -43,7 +43,7 @@
         height: 50px;
         box-sizing: border-box;
         box-shadow: #0000002a 0px 1px 2px 1px;
-        background: linear-gradient(to right, rgba(55, 50, 119), rgba(55, 50, 119), rgb(85, 81, 146));
+        background: linear-gradient(to right, rgb(66, 61, 133),rgba(55, 50, 119));
         z-index: 1;
         position: fixed;
         width: 100%;
@@ -108,7 +108,6 @@
         margin-right: 1px;
         padding: 16px 10px 15px 10px;
         box-sizing: border-box;
-        background-color: rgba(55, 50, 119);
         transition: 1s;
         z-index: 0;
     }
@@ -215,15 +214,14 @@
     .mainslider {
         width: 100%;
         margin-top: 50px;
-        margin-bottom: 20px;
-        background: url(https://visualstudio.microsoft.com/wp-content/uploads/2019/05/vshomeheromacwithgradient.jpg) center center;
+        background: url(images/backgrounds/vshomeheromacwithgradient.jpg) center center;
         background-size: cover;
         overflow: hidden;
     }
 
     .mainslider .content {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .content h1, .content p {
@@ -272,10 +270,13 @@
         right: 20px;
         top: 12px;
     }
-
+    .new-course {
+        background: #F4F4F4;
+    }
     h1.title {
-        font-weight: 200;
+        font-weight: 320;
         font-size: 2rem;
+        margin-top: 20px;
         margin-bottom: 20px;
         font-family: 'Segoe UI', sans-serif;
     }
@@ -283,13 +284,15 @@
     .course-box {
         float: left;
         width: 23.5%;
-        height: 240px;
         box-sizing: border-box;
         border-bottom: 3px solid rgb(0, 172, 0);
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
         margin-right: 2%;
         margin-bottom: 2%;
         position: relative;
+        box-sizing: border-box;
+        border-radius: 2px;
+        transition: 0.5s;
     }
 
     .course-box:hover {
@@ -309,13 +312,15 @@
     .course-box .source {
         background: yellow;
         text-align: center;
-        width: 90px;
+        width: 100px;
         padding: 5px 0px 5px 5px;
         font-size: 0.8em;
         box-sizing: border-box;
         position: absolute;
         top: 10px;
         left: -5px;
+        font-weight: 550;
+        text-transform: uppercase;
     }
 
     .text-box {
@@ -323,6 +328,8 @@
         height: 100%;
         box-sizing: border-box;
         padding: 10px;
+        height: 90px;
+        background: white;
     }
 
     .text-box .title {
@@ -361,40 +368,49 @@
         margin: 0 auto;
         text-align: center;
         font-size: 0.9em;
+        margin-bottom: 20px;
+        transition: 0.5s;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.596);
     }
-
+    .more a:hover {
+        transition: 0.5s;
+        background-color: rgb(27, 77, 138);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.596);
+    }
 
     .flowbox {
         width: 100%;
         margin-top: 30px;
         box-sizing: border-box;
-        background: url(https://visualstudio.microsoft.com/wp-content/uploads/2019/02/VS_SiteHeader_1600x500.jpg) no-repeat center center;
+        background: url(images/backgrounds/VS_SiteHeader_1600x500.jpg) no-repeat center center;
         background-size: cover;
+    }
+    .flowbox-left {
         text-align: center;
-    }
-
-    .flowbox-content {
         margin-top: 60px;
+        width: 50%;
+        float: left;
     }
 
-    .flowbox-content h1, .flowbox-content h3 {
+    .flowbox-left h1, .flowbox-left h3 {
         font-weight: 50;
     }
-
-    .flowbox-content p {
-        width: 100%;
-        margin-top: 25px;
-        margin-bottom: 60px;
-    }
-
-    .flowbox-content p a {
+    
+    .flowbox-left a {
+        width: 100px;
+        display: block;
+        margin: 25px auto 60px auto;
         padding: 10px 15px 10px 15px;
         background: #286090;
         color: white;
         border-radius: 5px;
         font-size: 1.2rem;
     }
-
+    .flowbox-right {
+        box-sizing: border-box; 
+        padding: 30px;
+        float: left;
+    }
     footer {
         bottom: 0px;
         width: 100%;
@@ -461,6 +477,7 @@
         color: #D3DBE1;
         text-align: center;
     }
+    /* Fix the floated childs of divs that affect another divs*/
     .container::after, .container::before, .courses::after, footer::after {
         content: "";
         clear: both;
