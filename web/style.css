@@ -220,7 +220,7 @@ input[type=text]:focus {
 .mainslider {
     width: 100%;
     margin-top: 50px;
-    background: url(images/backgrounds/vshomeheromacwithgradient.jpg) center center;
+    background: url(images/backgrounds/visual-studio-hero-banner.jpg) center center;
     background-size: cover;
     overflow: hidden
 }
