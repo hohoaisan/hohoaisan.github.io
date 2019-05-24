@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    font-family: Roboto, Arial, sans-serif
+    margin: 0
 }
 
 a:link {
@@ -8,18 +7,23 @@ a:link {
 }
 
 html {
+    font-family: Roboto, Arial, sans-serif;
     scroll-behavior: smooth
 }
 
 body, html {
-    height: 100%;
-    margin: 0
+    height: 100%
+}
+
+.wrapper {
+    min-height: 100%
 }
 
 .container {
     position: relative;
     width: 1100px;
-    margin: 0 auto
+    margin: 0 auto;
+    transition: .1s
 }
 
 .totop {
@@ -46,13 +50,12 @@ body, html {
 
 nav {
     height: 50px;
-    box-sizing: border-box;
     box-shadow: #0000002a 0 1px 2px 1px;
     background: #423d85;
-    z-index: 1;
     position: fixed;
     width: 100%;
-    top: 0
+    top: 0;
+    z-index: 1
 }
 
 #menu {
@@ -60,15 +63,14 @@ nav {
     width: 50px;
     height: 50px;
     background-color: #5f5ba3;
-    transition: .5s;
-    position: relative;
+    position: relative
 }
 
 #menu img {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%)
 }
 
 #menu:hover {
@@ -79,8 +81,7 @@ nav {
 #logo {
     float: left;
     height: 50px;
-    margin-right: 10px;
-    box-sizing: border-box
+    margin-right: 10px
 }
 
 #logo * {
@@ -94,33 +95,31 @@ nav {
 
 #logo a {
     color: #fff;
-    font-size: 20px;
-    text-decoration: none
+    font-size: 1.5em;
+    font-weight: 600
 }
 
 #dropdown-content>a {
     color: #c2c2c2;
-    text-decoration: none;
     display: block;
     float: left;
     text-align: center;
-    margin-right: 1px;
-    padding: 16px 10px 15px 10px;
-    box-sizing: border-box;
-    transition: 1s;
-    z-index: 0
+    padding: 15px 10px 15px 10px;
+    box-sizing: border-box
 }
 
-#dropdown-content a:hover, a.active {
+#dropdown-content a:hover {
     color: #fff;
     transition: .5s
 }
+
 .right-menu {
     float: right;
     position: absolute;
     right: 0;
-    background: #423d85;
+    background: #423d85
 }
+
 .account {
     margin-left: 10px;
     margin-right: 10px;
@@ -163,7 +162,7 @@ nav {
 .mini-search {
     position: relative;
     float: left;
-    height: 50px;
+    height: 50px
 }
 
 .mini-search>* {
@@ -176,7 +175,8 @@ nav {
     position: absolute;
     top: 50%;
     left: 15px;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    z-index: 0
 }
 
 .mini-search input[type=text] {
@@ -200,20 +200,6 @@ input[type=text]:focus {
     color: #fff
 }
 
-.mini-search input[type=submit] {
-    height: 50px;
-    width: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    border: none
-}
-
-.wrapper {
-    min-height: 100%;
-    margin-bottom: 0
-}
-
 .mainslider {
     width: 100%;
     margin-top: 50px;
@@ -223,8 +209,8 @@ input[type=text]:focus {
 }
 
 .greet {
-    margin-top: 50px;
-    margin-bottom: 0
+    margin-top: 40px;
+    margin-bottom: 40px
 }
 
 .greet h1, .greet p {
@@ -233,14 +219,14 @@ input[type=text]:focus {
 }
 
 .greet p {
-    font-size: 20px
+    font-size: 1.3em
 }
 
 .search {
     position: relative;
-    width: 400px;
+    width: 390px;
     height: 50px;
-    margin: 30px auto;
+    margin: 20px auto 0 auto;
     background: #fff;
     border-radius: 30px;
     box-sizing: border-box
@@ -252,26 +238,26 @@ input[type=text]:focus {
     outline: 0;
     width: 100%;
     height: 50px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 50px;
     box-sizing: border-box;
-    background: 0 0;
-    border: 0;
+    border: none;
     border-radius: 30px
 }
 
 .search ::placeholder {
-    color: #000;
-    font-size: 1.1em
+    color: gray
 }
 
 .search input[type=image] {
-    filter: invert(100%);
+    filter: invert(60%);
     float: right;
     width: 25px;
     height: 25px;
     position: absolute;
     right: 20px;
-    top: 12px
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 .new-course {
@@ -283,7 +269,7 @@ h1.title {
     font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: 'Segoe UI', sans-serif
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif
 }
 
 .course-box {
@@ -299,13 +285,13 @@ h1.title {
     border-radius: 2px
 }
 
-.course-box:hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
-    transition: 1s
-}
-
 .course-box:nth-child(4n) {
     margin-right: 0
+}
+
+.course-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition: .5s
 }
 
 .course-box img {
@@ -325,17 +311,18 @@ h1.title {
     left: -5px;
     text-transform: uppercase
 }
-.source a{
-    color: black;
+
+.source a {
+    color: #000;
     text-align: center;
-    font-size: 0.9em;
+    font-size: .9em
 }
+
 .text-box {
     width: 100%;
-    height: 100%;
     box-sizing: border-box;
     padding: 10px;
-    height: 90px;
+    height: 80px;
     background: #fff
 }
 
@@ -344,9 +331,11 @@ h1.title {
     text-overflow: ellipsis;
     overflow: hidden
 }
+
 .text-box .title a {
-    color: black;
+    color: #000
 }
+
 .text-box .star span {
     display: inline-block
 }
@@ -363,7 +352,8 @@ h1.title {
 }
 
 .text-box .small-category a {
-    color: gray
+    color: gray;
+    font-size: .9em
 }
 
 .more a {
@@ -427,7 +417,7 @@ h1.title {
     font-size: .8em
 }
 
-h4 a {
+a.more_np {
     display: block;
     font-weight: 300;
     color: #00918c;
@@ -440,7 +430,7 @@ h4 a {
     transition: 1s
 }
 
-h4 a:hover {
+a.more_np:hover {
     background-color: #00918c1e
 }
 
@@ -449,28 +439,34 @@ h4 a:hover {
     margin-top: 30px;
     box-sizing: border-box;
     background: url(images/backgrounds/VS_SiteHeader_1600x500.jpg) no-repeat center center;
-    background-size: cover
+    background-size: cover;
+    margin-bottom: 10px
 }
 
 .flowbox-content {
     text-align: center;
-    margin-top: 50px
+    margin-top: 50px;
+    margin-bottom: 50px
 }
 
-.flowbox-content h1, .flowbox-content h3 {
-    font-weight: 400
+.flowbox-content h1 {
+    font-weight: 400;
+    margin-bottom: 10px
 }
 
 .flowbox-content h3 {
+    font-weight: 400;
     text-align: center;
-    width: 500px;
-    margin: 10px auto 0 auto
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px
 }
 
 .flowbox-content a {
     width: 100px;
     display: block;
-    margin: 25px auto 50px auto;
+    margin: 0 auto;
     padding: 10px 15px 10px 15px;
     background: #286090;
     color: #fff;
@@ -478,16 +474,8 @@ h4 a:hover {
     font-size: 1.2rem
 }
 
-.flowbox-right {
-    box-sizing: border-box;
-    padding: 30px;
-    float: left
-}
-
 footer {
-    bottom: 0;
     width: 100%;
-    margin-top: 10px;
     background-color: #0b1a33
 }
 
@@ -495,47 +483,46 @@ footer hr {
     border: .5px solid gray
 }
 
-.footer {
+.footer-box {
     width: 26%;
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 10px;
     float: left
 }
-.footer:nth-child(2) {
+
+.footer-box:nth-child(2) {
     margin-left: 11%;
     margin-right: 11%
 }
-footer h4 {
+
+.footer-box h4 {
     color: #d3dbe1;
     text-transform: uppercase;
     font-family: 'Segoe UI', sans-serif
 }
 
-footer ul {
+.footer-box ul {
     padding-left: 10px
 }
 
-footer ul li {
+.footer-box ul li {
     list-style: none;
     margin-top: 10px
 }
 
-footer ul li a {
+.footer-box ul li a {
     font-family: 'Segoe UI', sans-serif;
     color: #d3dbe1;
-    font-weight: 400;
-    text-decoration: none
+    font-weight: 400
 }
 
 .footer-bar {
-    float: left;
     width: 100%;
     height: 80px
 }
 
 .footer-bar p {
-    font-size: 1rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -543,7 +530,7 @@ footer ul li a {
     text-align: center
 }
 
-.container::after, .container::before, .courses::after, .posts::after, footer::after {
+.container::after, .container::before, .courses::after, .posts::after {
     content: "";
     clear: both;
     display: table
