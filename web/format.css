@@ -1,9 +1,12 @@
+/*Khi màn hình trình duyệt thấp hơn 1200px thì container sẽ được co lại với độ dài 90% so với chiều ngang trình duyệt*/
+
 @media only screen and (max-width:1200px) {
     .container {
         width: 90%;
-        transition: .5s
     }
 }
+
+/*Khi màn hình trình duyệt thấp hơn 1000px thì đặt course-box có độ dài là 32%, đặt lại margin 2% cho các phần tử có thứ tự là bội số của 4, đặt margin là 0 cho các phần tử có thứ tự là bội của 3, ẩn đi các phần tử có thứ tự lớn hơn 6 (chia 3 cột course-box thay vì mặc định là 4)*/
 
 @media only screen and (max-width:1000px) {
     .course-box {
@@ -20,18 +23,15 @@
     }
 }
 
-@media only screen and (max-width:895px) {
+/*Khi màn hình trình duyệt thấp hơn 800px thì hiện nút menu bên phải logo, ẩn hết toàn bộ các mục trong dropdown-content, và kết hợp với menu.js có thể hiện ra khi click vào nút menu*/
+
+@media only screen and (max-width:800px) {
     #menu {
         display: block;
         float: left
     }
-    #dropdown {
-        float: left;
-        position: absolute;
-        z-index: 5
-    }
     #dropdown-content {
-        position: relative;
+        position: absolute;
         display: none;
         top: 50px;
         left: 0;
@@ -47,20 +47,14 @@
     }
 }
 
+/*Khi trình duyệt có chiều ngang thấp hơn 750px thì..*/
+
 @media only screen and (max-width:750px) {
+    /*Container có chiều dài bằng 93% chiều ngang trình duyệt*/
     .container {
         width: 93%;
-        transition: .5s
     }
-    .footer {
-        margin-left: 0;
-        width: 100%;
-        clear: both
-    }
-    .footer:nth-child(2) {
-        margin-left: 0;
-        margin-right: 0
-    }
+    /*Chia course-box trong web thành 2 cột, đặt margin-right của các phần tử có bội 3 là 2%, với các phần tử có bội 2 là 0*/
     .course-box {
         width: 49%
     }
@@ -70,17 +64,25 @@
     .course-box:nth-child(2n) {
         margin-right: 0
     }
-    .course-box:nth-child(1n+7) {
-        display: none
+}
+
+/*Khi trình duyệt có chiều ngang thấp hơn 650px thì..*/
+
+@media only screen and (max-width:650px) {
+    /*Container có chiều dài bằng 95% chiều ngang trình duyệt*/
+    .container {
+        width: 95%;
     }
+    /*Giãn h3 của flowbox ra bằng chiều ngang của trình duyệt*/
     .flowbox-content h3 {
         width: 100%
     }
-}
-
-@media only screen and (max-width:650px) {
-    .container {
-        width: 95%;
-        transition: .5s
+    /*Giãn các footer-box ra bằng chiều ngang của trình duyệt và đặt margin cho box thứ 2 là 0*/
+    .footer-box {
+        width: 100%;
+    }
+    .footer-box:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

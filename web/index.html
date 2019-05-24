@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Coder.learn - Học để trở thành Coder</title>
@@ -8,273 +7,285 @@
     <link rel="stylesheet" type="text/css" href="format.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-
 <body id="totop">
-    <header>
-        <!--Header chỉ chứa nav-->
-        <nav>
-            <!--Khi nav là 1 thanh dài tràn ở trên cùng trang web thì tất cả các phần tử trong nav sẽ bị giới hạn trong class container-->
-            <div id="navmenu" class="container">
-                <!--Trong nav gồm có menu, logo, các mục trong dropdown, nút mini-search và account, riêng menu và các mục nằm trong dropdown sẽ được biến đổi thành hambuger bằng css khi cửa sổ bị thu nhỏ, bình thường thì không-->
-                <div id="menu">
-                    <img class="menu-border" src="images/assets/menu.png">
-                </div>
-                <div id="logo">
-                    <img src="images/assets/icon.png" width="30px" height="auto" href="" alt="logo">
-                    <a href="#">Coder.learn</a>
-                </div>
-                <div id="dropdown">
-                    <div id="dropdown-content">
-                        <a href="#">Khoá học</a>
-                        <a href="#">Bài viết</a>
-                        <a href="#">Thảo luận</a>
-                        <a href="#">Tài liệu</a>
-                        <a href="#">Phản hồi</a>
-                    </div>
-                </div>
-                <div class="right-menu">
-                    <div class="mini-search">
-                        <img src="images/assets/search.png">
-                        <form name="mini-search" action="https://www.google.com/search" method="GET" target="_blank">
-                            <input type="text" name="q" placeholder="Tìm kiếm gì đó...">
-                        </form>
-                    </div>
-                    <div class="account">
-                        <img src="images/assets/user.png">
-                        <span></span>
-                    </div>
-                </div>
+<header>
+<!--Header chỉ chứa nav-->
+    <nav>
+        <!--Khi nav là 1 thanh dài tràn ở trên cùng trang web thì tất cả các phần tử trong nav sẽ bị giới hạn trong class container-->
+        <div id="navmenu" class="container">
+            <!--Trong nav gồm có menu, logo, các mục trong dropdown-content và menu-right gồm mini-search và account, riêng menu và các mục nằm trong dropdown-content sẽ được biến đổi thành hambuger bằng css khi cửa sổ bị thu nhỏ, bình thường thì không-->
+            <div id="menu">
+                <img class="menu-img" src="images/assets/menu.png">
             </div>
-        </nav>
-        <!--Kết thúc Header-->
-    </header>
-    <div class="wrapper">
-        <div class="mainslider">
-            <div class="container greet">
-                <h1>Hàng trăm khoá học miễn phí</h1>
-                <p>Được xây dựng bởi team Coder.learn và đóng góp bởi cộng đồng lập trình viên trên khắp Việt Nam, những khoá học từ cơ bản đến nâng cao đang chờ bạn khám phá!</p>
-                <div class="search">
-                    <form name="search" action="https://www.google.com/search" method="GET" target="_blank">
-                        <input type="text" name="q" placeholder="Tìm kiếm khoá học, tài liệu, câu hỏi...">
-                        <input type="image" src="images/assets/search.png">
+            <div id="logo">
+                <img src="images/assets/icon.png" width="30px" height="auto" href="" alt="logo">
+                <a href="#">Coder.learn</a>
+            </div>
+            <div id="dropdown-content">
+                <a href="#">Khoá học</a>
+                <a href="#">Bài viết</a>
+                <a href="#">Thảo luận</a>
+                <a href="#">Tài liệu</a>
+                <a href="#">Phản hồi</a>
+            </div>
+            <div class="right-menu">
+                <div class="mini-search">
+                    <!--phần search sẽ chỉ chứa mục nhập liệu, ta có thể submit bằng nút Enter-->
+                    <img src="images/assets/search.png">
+                    <form name="mini-search" action="https://www.google.com/search" method="GET" target="_blank">
+                        <input type="text" name="q" placeholder="Tìm kiếm gì đó...">
                     </form>
                 </div>
+                <div class="account">
+                    <img src="images/assets/user.png">
+                    <span></span>
+                </div>
             </div>
         </div>
-        <div class="new-course">
-            <div class="container">
-                <h1 class="title">Khoá học mới nhất</h1>
-                <div class="courses">
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course1.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình CSS và SASS nâng cao với dự án website Landing Page">Lập trình CSS và SASS nâng cao với dự án website Landing Page</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Front-end</a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course2.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình Tool Auto Android với ADB">Lập trình Tool Auto Android với ADB</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Mobile
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course3.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình Hướng Đối Tượng với Python">Lập trình Hướng Đối Tượng với Python</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Python
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course4.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình React Native v0.45">Lập trình React Native v0.45</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Mobile
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course5.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình Java cơ bản đến hướng đối tượng">Lập trình Java cơ bản đến hướng đối tượng</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Java
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">HowKTeam</a></div>
-                        <img src="images/courses/course6.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Lập trình Http Request với C#">Lập trình Http Request với C#</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-half.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình C# .Net
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course7.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Điều khiển ứng dụng PC với C#">Lập trình Front End cơ bản với website Landing Page</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình Front-End
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="course-box">
-                        <div class="source"><a href="#">CLearn Team</a></div>
-                        <img src="images/courses/course8.png">
-                        <div class="text-box">
-                            <div class="title"><a href="#" title="Điều khiển ứng dụng PC với C#">Điều khiển ứng dụng PC với C#</a></div>
-                            <div class="star">
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                                <span><img src="images/assets/star-on.png"></span>
-                            </div>
-                            <div class="small-category"><a href="#">Lập trình C# .Net
-                                </a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more"><a href="#">Xem thêm</a></div>
-            </div>
-        </div>
-        <div class="new-post">
-            <div class="container">
-                <h1 class="title">Bài viết mới nhất</h1>
-                <div class="posts">
-                    <div class="post">
-                        <a class="title">Front End – Reset CSS Với Normalize.css</a>
-                        <p>Hôm bữa mình đang ngồi code mấy cái thẻ div ngon lành, chèn CSS khí thế đủ thứ kiểu, lúc sau inspect vào cái mấy div tự dưng lại thấy xuất hiện thêm một padding-top khác từ đầu ra.
-                        </p>
-                        <p class="info">1 giờ trước</p>
-                    </div>
-                    <div class="post">
-                        <a class="title">Cài đặt PySpark và nối với Jupyter bằng hai bàn tay trắng</a>
-                        <p>Bài này được dịch từ bản gốc của mình ở đây. Tại sao lại có bài này? Gần đây, mình có một dự án riêng phải làm về phân tích dữ liệu. Khối lượng dữ liệu (đã nén) vào khoảng 40Gb. Vậy thì sao?
-                        </p>
-                        <p class="info">12 giờ trước</p>
-                    </div>
-                    <div class="post">
-                        <a class="title" href="https://www.howkteam.vn/course/nhung-bai-viet-huu-ich-tu-quora-55">Những bài viết hữu ích từ Quora</a>
-                        <p>Hi mọi người! Đây là bài dịch trong chuỗi bài NHỮNG BÀI VIẾT HỮU ÍCH TỪ QUORA của website Howkteam.com & các Kter tâm huyết, Mong muốn mang lại thêm nhiều kiến thức hữu ích từ các nguồn kiến thức nước ngoài đến với cộng đồng.
-                        </p>
-                        <p class="info">1 ngày trước</p>
-                    </div>
-                    <div class="post">
-                        <a class="title" href="https://kipalog.com/posts/JAVASCRIPT--JavaScript-hoat-dong-nhu-the-nao">[JAVASCRIPT] JavaScript hoạt động như thế nào?</a>
-                        <p> Single Thread
-                            Làm một việc tại một thời điểm Không giống như đa số các ngôn ngữ lập trình khác, javascript đơn giản là đơn luồng. Điều này đồng nghĩa với việc tại một thời điểm nó chỉ xử lý duy nhất một việc. Bất cứ tác vụ nào đều phải thực hiện lần lượt
-                        </p>
-                        <p class="info">1 ngày trước</p>
-                    </div>
-                </div>
-                <h4><a href="#">Xem thêm</a></h4>
-            </div>
-        </div>
-        <div class="flowbox">
-            <div class="container">
-                <div class="flowbox-content">
-                    <h1>Cộng đồng thảo luận & hỏi đáp</h1>
-                    <h3>Cộng đồng hỏi đáp trực tuyến dành cho lập trình viên để học hỏi, chia sẻ tất cả kiến ​​thức về lập trình, công nghệ thông tin.</h3>
-                    <a href="#">Đặt câu hỏi</a>
-                </div>
+    </nav>
+    <!--Kết thúc Header-->
+</header>
+<div class="wrapper">
+    <!--Wrapper chứa 4 phần nội dung trang web: mainslider, new-course, new-post và flowbox, mỗi phần sẽ có các phần tử con được bao bởi Container, giúp chúng không bị tràn ra ngoài bố cục web-->
+    <div class="mainslider">
+        <div class="container greet">
+            <h1>Hàng trăm khoá học miễn phí</h1>
+            <p>Được xây dựng bởi team Coder.learn và đóng góp bởi cộng đồng lập trình viên trên khắp Việt Nam, những khoá học từ cơ bản đến nâng cao đang chờ bạn khám phá!</p>
+            <div class="search">
+                <form name="search" action="https://www.google.com/search" method="GET" target="_blank">
+                    <input type="text" name="q" placeholder="Tìm kiếm khoá học, tài liệu, câu hỏi...">
+                    <input type="image" src="images/assets/search.png">
+                </form>
             </div>
         </div>
     </div>
-    <footer>
+    <div class="new-course">
+        <!--Phần tử div.new-course chứa các khoá học mới cập nhật trên hệ thống trang web-->
         <div class="container">
-            <div class="footer">
-                <h4>Tài nguyên</h4>
-                <ul>
-                    <li><a href="#">Khoá học</a></li>
-                    <li><a href="#">Bài viết</a></li>
-                    <li><a href="#">Thảo luận</a></li>
-                    <li><a href="#">Tài liệu</a></li>
-                    <li><a href="#">Chiến dịch</a></li>
-                </ul>
+            <!--3 phần tử con của new-course là h1.title, courses và div.more, đều được bao trong class container-->
+            <h1 class="title">Khoá học mới nhất</h1>
+            <div class="courses">
+                <!--Trong phần tử div.courses chứa các phần tử sử dụng chung class course-box, có cấu trúc các thành phần con như sourse, img, textbox giống nhau để tạo sự đồng nhất về kích thước và nội dung của mỗi course-box-->
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course1.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình CSS và SASS nâng cao với dự án website Landing Page">Lập trình CSS và SASS nâng cao với dự án website Landing Page</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Front-end</a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course2.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình Tool Auto Android với ADB">Lập trình Tool Auto Android với ADB</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Mobile
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course3.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình Hướng Đối Tượng với Python">Lập trình Hướng Đối Tượng với Python</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Python
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course4.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình React Native v0.45">Lập trình React Native v0.45</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Mobile
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course5.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình Java cơ bản đến hướng đối tượng">Lập trình Java cơ bản đến hướng đối tượng</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Java
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">HowKTeam</a></div>
+                    <img src="images/courses/course6.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Lập trình Http Request với C#">Lập trình Http Request với C#</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-half.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình C# .Net
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course7.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Điều khiển ứng dụng PC với C#">Lập trình Front End cơ bản với website Landing Page</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình Front-End
+                            </a></div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="source"><a href="#">CLearn Team</a></div>
+                    <img src="images/courses/course8.png">
+                    <div class="text-box">
+                        <div class="title"><a href="#" title="Điều khiển ứng dụng PC với C#">Điều khiển ứng dụng PC với C#</a></div>
+                        <div class="star">
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                            <span><img src="images/assets/star-on.png"></span>
+                        </div>
+                        <div class="small-category"><a href="#">Lập trình C# .Net
+                            </a></div>
+                    </div>
+                </div>
+            <!--Kết thúc div.courses-->
             </div>
-            <div class="footer">
-                <h4>Liên kết</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
+            <div class="more"><a href="#">Xem thêm</a></div>
+        </div>
+        <!--Kết thúc div.new-course-->
+    </div>
+    <div class="new-post">
+        <!--Phần tử div.new-post sẽ chứa các bài viết mới nhất-->
+        <div class="container">
+            <!--Các phần tử con của div.new-post là h1.title và div.posts, trong div.posts chứa các phần tử sử dụng chung class post với các phần tử con có cấu trúc giống nhau tạo nên sự đồng nhất tương tự như div.course-box của div.courses-->
+            <h1 class="title">Bài viết mới nhất</h1>
+            <div class="posts">
+                <div class="post">
+                    <a class="title">Front End – Reset CSS Với Normalize.css</a>
+                    <p>Hôm bữa mình đang ngồi code mấy cái thẻ div ngon lành, chèn CSS khí thế đủ thứ kiểu, lúc sau inspect vào cái mấy div tự dưng lại thấy xuất hiện thêm một padding-top khác từ đầu ra.
+                    </p>
+                    <p class="info">1 giờ trước</p>
+                </div>
+                <div class="post">
+                    <a class="title">Cài đặt PySpark và nối với Jupyter bằng hai bàn tay trắng</a>
+                    <p>Bài này được dịch từ bản gốc của mình ở đây. Tại sao lại có bài này? Gần đây, mình có một dự án riêng phải làm về phân tích dữ liệu. Khối lượng dữ liệu (đã nén) vào khoảng 40Gb. Vậy thì sao?
+                    </p>
+                    <p class="info">12 giờ trước</p>
+                </div>
+                <div class="post">
+                    <a class="title" href="https://www.howkteam.vn/course/nhung-bai-viet-huu-ich-tu-quora-55">Những bài viết hữu ích từ Quora</a>
+                    <p>Hi mọi người! Đây là bài dịch trong chuỗi bài NHỮNG BÀI VIẾT HỮU ÍCH TỪ QUORA của website Howkteam.com & các Kter tâm huyết, Mong muốn mang lại thêm nhiều kiến thức hữu ích từ các nguồn kiến thức nước ngoài đến với cộng đồng.
+                    </p>
+                    <p class="info">1 ngày trước</p>
+                </div>
+                <div class="post">
+                    <a class="title" href="https://kipalog.com/posts/JAVASCRIPT--JavaScript-hoat-dong-nhu-the-nao">[JAVASCRIPT] JavaScript hoạt động như thế nào?</a>
+                    <p> Single Thread
+                        Làm một việc tại một thời điểm Không giống như đa số các ngôn ngữ lập trình khác, javascript đơn giản là đơn luồng. Điều này đồng nghĩa với việc tại một thời điểm nó chỉ xử lý duy nhất một việc. Bất cứ tác vụ nào đều phải thực hiện lần lượt
+                    </p>
+                    <p class="info">1 ngày trước</p>
+                </div>
+                <!--Kết thúc div.post-->
             </div>
-            <div class="footer">
-                <h4>Khác</h4>
-                <ul>
-                    <li><a href="#">Phản hồi</a></li>
-                    <li><a href="#">Thông tin về Coder.learn</a></li>
-                    <li><a href="#">Chính sách</a></li>
-                </ul>
+            <a href="#" class="more_np">Xem thêm</a>
+        <!--Kết thúc div.new-post-->
+        </div>
+    </div>
+    <div class="flowbox">
+        <!--Flowbox đơn giản hơn, chỉ chứa nội dung là h1, h3 và a cũng được bao bởi container-->
+        <div class="container">
+            <div class="flowbox-content">
+                <h1>Cộng đồng thảo luận & hỏi đáp</h1>
+                <h3>Cộng đồng hỏi đáp trực tuyến dành cho lập trình viên để học hỏi, chia sẻ tất cả kiến ​​thức về lập trình, công nghệ thông tin.</h3>
+                <a href="#">Đặt câu hỏi</a>
             </div>
         </div>
-        <div class="footer-bar">
-            <hr class="container">
-            <p class="container">© 2019 Coder.learn. All rights reserved.</p>
+    </div>
+    <!--Kết thúc Wrapper-->
+</div>
+<footer>
+    <!--Footer gồm 4 phần tử là 3 div.footer giống nhau về thành phần và phần tử còn lại là div.footer-bar nằm tách biệt khỏi 3 phần tử phía trên-->
+    <div class="container">
+        <div class="footer-box">
+            <h4>Tài nguyên</h4>
+            <ul>
+                <li><a href="#">Khoá học</a></li>
+                <li><a href="#">Bài viết</a></li>
+                <li><a href="#">Thảo luận</a></li>
+                <li><a href="#">Tài liệu</a></li>
+                <li><a href="#">Chiến dịch</a></li>
+            </ul>
         </div>
-    </footer>
-    <a class="totop" href="#totop"><span></span></a>
+        <div class="footer-box">
+            <h4>Liên kết</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h4>Khác</h4>
+            <ul>
+                <li><a href="#">Phản hồi</a></li>
+                <li><a href="#">Thông tin về Coder.learn</a></li>
+                <li><a href="#">Chính sách</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <hr class="container">
+        <p class="container">© 2019 Coder.learn. All rights reserved.</p>
+    </div>
+    <!--Kết thúc Footer-->
+</footer>
+<!--phần tử a.totop dùng để cuộn trang lên đầu khi ấn vào-->
+<a class="totop" href="#totop"><span></span></a>
 </body>
 <script src="menu.js"></script>
-
 </html>
