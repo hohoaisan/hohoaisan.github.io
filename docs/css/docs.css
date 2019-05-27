@@ -1,5 +1,5 @@
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 	padding-bottom: 0px;
 	background: #f8fcff url(http://yorimoi.com/images/common-background.png) repeat-y center top;
 	background-size: 1400px;
@@ -21,7 +21,6 @@ body {
 	visibility: hidden;
 }
 
-.docs-section {}
 
 .docs .tab-content {
 	padding: 15px;
