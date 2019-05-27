@@ -1,6 +1,6 @@
     //Điều khiển nút Menu, khi cửa sổ thay đổi thì nếu dropdown-content đang được xổ xuống thì phải tắt nó đi
     //Khi cửa sổ nhỏ hơn giới hạn wmaxsize thì lập tức xoá class container của #navmenu để nút #menu và .search nằm dàn ra sát màn hình
-    var wmaxsize = 895;
+    var wmaxsize = 800;
     var menu = document.getElementById("menu")
     var x = document.getElementById("dropdown-content")
     if (window.innerWidth <= wmaxsize) {
@@ -23,7 +23,7 @@
         a = window.event.srcElement.id;
         b = window.event.srcElement.className;
         if (w <= wmaxsize) {
-            if (a === "menu" || b === "menu-border") {
+            if (a === "menu" || b === "menu-img") {
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
