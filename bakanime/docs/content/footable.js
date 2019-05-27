@@ -21,6 +21,6 @@ jQuery(function ($) {
 			{ "name": "480p",	"title": "SD", "type": "link"
 			}],
 
-		"rows": $.get("docs/content/rows.json")
+		"rows": $.get("/bakanime/docs/content/rows.json")
 	});
 });
