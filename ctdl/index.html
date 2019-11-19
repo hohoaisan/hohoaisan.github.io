@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,104 @@
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- <div id="imgview">
+        <a id="close">X</a>
+        <img src="./assests/sample.png">
+    </div> -->
     <div id="wrapper">
         <header>
             <h1>Cấu trúc dữ liệu và giải thuật nhóm 1</h1>
             <p>
-                <span class="member">Phạm Ngọc Anh</span>
+                <span class="member" style="font-weight: 550;">Phạm Ngọc Anh</span>
                 <span class="member">Bùi Nguyễn Ngọc Huy</span>
                 <span class="member">Trần Võ Lập</span>
                 <span class="member">Hồ Hoài Sản</span>
-                <span class="member">Võ Thị Hoàng Thư</span>
-                <span class="member">Hoàng Phan Tuấn Dũng</span>
-                <span class="member">Hoàng Văn Linh</span>
+
             </p>
+            <p><span class="member">Võ Thị Hoàng Thư</span>
+                <span class="member">Hoàng Phan Tuấn Dũng</span>
+                <span class="member">Hoàng Văn Linh</span></p>
         </header>
         <div class="container">
             <div class="box">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam officia temporibus sint amet nobis vel sequi recusandae, inventore fugit omnis odio laudantium ut voluptatem rerum ratione, dolorem reiciendis voluptates!</p>
+                <div class="title">
+                    <h1>Bảng phân công việc</h1>
+                </div>
+                <table>
+                    <ul>
+                        <tr>
+                            <td>
+                                <li>Xây dựng cây nhị phân tìm kiếm (khởi tạo struct, hàm khởi tạo, hàm thêm node)</li>
+                            </td>
+                            <td>Võ Lập</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Xây dựng hàm bổ sung thêm sinh viên vào cây nhị phân tìm kiếm</li>
+                            </td>
+                            <td>Tuấn Dũng</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Xây dựng hàm đếm trong cây nhị phân số sinh viên có đtb trên 5,5</li>
+                            </td>
+                            <td>Ngọc Anh</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Xây dựng hàm in trong cây nhị phân những sinh viên có đtb trên 5,5</li>
+                            </td>
+                            <td>Hoàng Thư</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Xây dựng hàm xoá những sinh viên có điểm trung bình dưới 5,5</li>
+                            </td>
+                            <td>Văn Linh</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Thiết kế web</li>
+                            </td>
+                            <td>Hoài Sản</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li>Ghép code, sửa lỗi</li>
+                            </td>
+                            <td>Ngọc Huy, Hoài Sản</td>
+                        </tr>
+                    </ul>
+
+                </table>
             </div>
+        </div>
+        <div class="outbox">
+            <div class="container">
+                <div class="title">
+                    <h1>Quá trình thực hiện</h1>
+                </div>
+                <div class="box">
+                    <p>Quá trình thực hiện gặp rất nhiều khó khăn, đặc biệt là rất khó khăn và khó khăn không thể tả. Đối với mỗi thành viên, sự khó khăn ngày một khó khăn vì không có khó khăn nào như khó khăn nào, nên dù khó khăn thì mỗi thành viên đều thực hiện một khác rất khó khăn. Cuối cùng thì, mỗi khó khăn đều đã được giải quyết, nên dù cảm thấy thật sự khó khăn, mọi người vẫn khó khăn bày tỏ nỗi lòng khi khó khăn làm bài tập</p>
+                </div>
+            </div>
+            <div id="imgctn">
+                    <img class="imgbox" src="./assests/sample.png">
+                    <img class="imgbox" src="./assests/sample.png">
+                    <img class="imgbox" src="./assests/sample.png">
+                    <img class="imgbox" src="./assests/sample.png">
+                    <img class="imgbox" src="./assests/sample.png">
+                  
+            </div>  
+        </div>
+        <div class="container">
+
             <div class="box">
                 <div class="title">
-                        <h1>Code sample</h1>
-                        <a href="">Download Code</a>
+                    <h1>Code sample</h1>
+                    <a href="">Download Code</a>
                 </div>
                 <iframe height="800px" width="100%" src="https://repl.it/@hohoaisan/CTDLTEAM?lite=true" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
             </div>
@@ -36,7 +113,9 @@
                 <div class="code" style="height: 500px; overflow: auto;">
                     <script src="//onlinegdb.com/embed/js/rJ6m_rnjr?theme=dark"></script>
 
-                    <div id="iframe-bottom" style="text-align: center"><p>Chú ý: gets không chạy trực tiếp trên web được mà chỉ chạy ổn định trên GCC/G++ 4.9.2 (DevC++)</p></div>
+                    <div id="iframe-bottom" style="text-align: center">
+                        <p>Chú ý: gets không chạy trực tiếp trên web được mà chỉ chạy ổn định trên GCC/G++ 4.9.2 (DevC++)</p>
+                    </div>
                 </div>
             </div>
             <div class="box"></div>
@@ -44,4 +123,5 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
