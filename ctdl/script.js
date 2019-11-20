@@ -10,6 +10,8 @@ document.addEventListener('click', (event)=> {
     {
         pr = document.createElement('div');
         pr.setAttribute('id', 'imgview');
+        ct = document.createElement('div');
+        ct.setAttribute('id', 'imgview-ctn');
         a = document.createElement('a');
         a.innerText = 'X';
         a.setAttribute('id', 'imgview-a');
@@ -17,10 +19,11 @@ document.addEventListener('click', (event)=> {
         i.setAttribute('src', event.srcElement.src);
         i.setAttribute('id', 'imgview-img');
         pr.appendChild(a);
-        pr.appendChild(i);
+        ct.appendChild(i);
+        pr.appendChild(ct);
         document.getElementsByTagName('body')[0].appendChild(pr);
     }
-    if (event.srcElement.id == 'imgview-a')
+    if (event.srcElement.id == 'imgview-a' || event.srcElement.id == 'imgview-ctn')
     {
         event.srcElement.parentNode.parentNode.removeChild(event.srcElement.parentNode);
     }

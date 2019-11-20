@@ -109,12 +109,10 @@ header p .member:not(:last-child) {
 ul {
     margin: 0;
     list-style-position: inside;
-    margin-left: 20px;
 }
 
 table {
     width: 100%;
-    margin-left: 20px;
 }
 
 td:last-child {
@@ -159,11 +157,18 @@ td:last-child {
     display: flex;
     justify-content: center;
     position: absolute;
+    z-index: 9999;
 }
 
-#imgview img {
+#imgview #imgview-ctn {
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#imgview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
