@@ -1,7 +1,6 @@
 ic = document.getElementById('imgctn');
 ic.addEventListener('wheel', (event)=> {
     event.preventDefault();
-    console.log(event.deltaY);
     ic.scrollLeft+=event.deltaY*8;
 })
 

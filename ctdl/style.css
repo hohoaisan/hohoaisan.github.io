@@ -12,9 +12,11 @@
     scroll-behavior: smooth;
     color: var(--text-color);
 }
-
-html {
+a,p,li {
     line-height: 1.5em;
+}
+html {
+    
     font-family: Roboto, sans-serif;
 }
 
@@ -124,8 +126,13 @@ td:last-child {
 }
 
 #imgctn {
+    min-height: 0;
+    min-width: 0;
     display: flex;
     overflow: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
 }
 
 .imgbox {
