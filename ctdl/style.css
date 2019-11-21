@@ -141,6 +141,7 @@ td:last-child {
     border: 1px solid var(--box-border);
     border-radius: 10px;
     width: 500px;
+    flex-shrink: 0;
 }
 
 .imgbox {
@@ -178,4 +179,14 @@ td:last-child {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+ol {
+    list-style-type: none;
+    list-style-position: inside;
+    font-size: larger;
+}
+
+span.date {
+    margin-right: 2em;
 }
