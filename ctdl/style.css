@@ -104,7 +104,7 @@ header p .member:not(:last-child) {
     font-size: 0.8em;
 }
 
-.box h1, .outbox h1 {
+.box h2, .outbox h2 {
     font-size: 1.5em;
 }
 
@@ -135,18 +135,16 @@ td:last-child {
     flex-flow: nowrap;
 }
 
-.imgbox {
+#imgctn .imgbox {
     box-sizing: border-box;
     padding: 5px;
     border: 1px solid var(--box-border);
     border-radius: 10px;
     width: 500px;
     flex-shrink: 0;
-}
-
-.imgbox {
     margin-left: 10px;
 }
+
 
 #imgview {
     width: 100%;
@@ -154,6 +152,7 @@ td:last-child {
     position: fixed;
     background: rgba(114, 114, 114, 0.8);
     top: 0;
+    overflow: auto;
 }
 
 #imgview a {
@@ -164,18 +163,20 @@ td:last-child {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
 }
 
 #imgview #imgview-ctn {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#imgview img {
+#imgview #imgview-ctn:not(.scroll-able) {
+    height: 100%;
+}
+#imgview #imgview-ctn img{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -186,7 +187,33 @@ ol {
     list-style-position: inside;
     font-size: larger;
 }
-
+li {
+    box-sizing: border-box;
+    padding: 8px;
+}
 span.date {
     margin-right: 2em;
+}
+tr{
+border-radius: 20px;
+}
+
+
+#preview-ctn {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#preview-ctn .preview-box {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+}
+#preview-ctn .preview-box:not(:last-child){
+    margin-right: 10px;
+}
+#preview-ctn .preview-box img{
+    width: 100%;
 }
