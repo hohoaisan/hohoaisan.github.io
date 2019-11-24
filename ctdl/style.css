@@ -201,7 +201,8 @@ border-radius: 20px;
 
 #preview-ctn {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 #preview-ctn .preview-box {
     box-sizing: border-box;
@@ -210,10 +211,10 @@ border-radius: 20px;
     border-radius: 5px;
     height: 300px;
     overflow: hidden;
+    width: 180px;
+    margin-bottom: 10px;
 }
-#preview-ctn .preview-box:not(:last-child){
-    margin-right: 10px;
-}
+
 #preview-ctn .preview-box img{
     width: 100%;
 }

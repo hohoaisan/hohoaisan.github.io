@@ -1,8 +1,21 @@
-ic = document.getElementById('imgctn');
-ic.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    ic.scrollLeft += event.deltaY * 8;
-})
+(function imgctnHorizontalScroll() {
+    ic = document.getElementById('imgctn');
+    if (ic !== null) {
+        ic.addEventListener('wheel', (event) => {
+            event.preventDefault();
+            ic.scrollLeft += event.deltaY * 8;
+        })
+    }
+})();
+
+(function tablerowRandomColor() {
+    function RandomColor() {
+        return Math.ceil(Math.random() * 100 + Math.random() * 100 + Math.random() * 10 + Math.random() * 10)
+    }
+    color = RandomColor() + ',' + RandomColor() + ',' + RandomColor();
+    tablerow = document.getElementsByTagName('tr');
+    for (i = 0; i < tablerow.length; i++) tablerow[i].style.backgroundColor = 'rgba(' + color + ',0.' + (i / 2 + 1) + ')'
+})();
 
 document.addEventListener('click', (event) => {
     if (event.srcElement.classList == 'imgbox') {
@@ -31,16 +44,9 @@ document.addEventListener('click', (event) => {
         document.getElementsByTagName('body')[0].style.overflow = 'auto';
     }
 
-})
+});
 
 document.onkeyup = function (e) {
     if (e.ctrlKey && e.which == 67)
         alert("There was a bit difference between running code on the web and on DevC++, please download instead of copying");
 };
-
-function RandomColor() {
-    return Math.ceil(Math.random() * 100 + Math.random() * 100 + Math.random() * 10 + Math.random() * 10)
-}
-color = RandomColor()+','+RandomColor()+','+RandomColor();
-tablerow = document.getElementsByTagName('tr');
-for (i = 0; i < tablerow.length; i++) tablerow[i].style.backgroundColor = 'rgba('+color+',0.'+(i/2+1)+')'
