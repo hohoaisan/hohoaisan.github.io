@@ -103,6 +103,9 @@ header p .member:not(:last-child) {
     font-weight: 600;
     font-size: 0.8em;
 }
+.title a+a {
+    background: red;
+}
 
 .box h2, .outbox h2 {
     font-size: 1.5em;

@@ -8,13 +8,13 @@
     }
 })();
 
-(function tablerowRandomColor() {
+(function rolerowRandomColor() {
     function RandomColor() {
         return Math.ceil(Math.random() * 100 + Math.random() * 100 + Math.random() * 10 + Math.random() * 10)
     }
     color = RandomColor() + ',' + RandomColor() + ',' + RandomColor();
-    tablerow = document.getElementsByTagName('tr');
-    for (i = 0; i < tablerow.length; i++) tablerow[i].style.backgroundColor = 'rgba(' + color + ',0.' + (i / 2 + 1) + ')'
+    rolerow = document.getElementsByClassName('role-row');
+    for (i = 0; i < rolerow.length; i++) rolerow[i].style.backgroundColor = 'rgba(' + color + ',0.' + (i / 2 + 1) + ')'
 })();
 
 document.addEventListener('click', (event) => {
@@ -46,7 +46,7 @@ document.addEventListener('click', (event) => {
 
 });
 
-document.onkeyup = function (e) {
-    if (e.ctrlKey && e.which == 67)
-        alert("There was a bit difference between running code on the web and on DevC++, please download instead of copying");
-};
+// document.onkeyup = function (e) {
+//     if (e.ctrlKey && e.which == 67)
+//         alert("There was a bit difference between running code on the web and on DevC++, please download instead of copying");
+// };
