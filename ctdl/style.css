@@ -27,7 +27,6 @@ body {
 
 header {
     background: var(--header-linear);
-    height: 200px;
     align-content: center;
     margin-bottom: 15px;
     display: flex;
@@ -40,17 +39,39 @@ header h1 {
     text-align: center;
     padding: 10px;
     color: var(--text-color);
+    margin-top: 50px;
 }
 
-header p {
+.member-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.member-list > * {
+    margin: 5px;
+}
+.member {
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-shadow: 0 0 0 1px lightslategray inset;
+    padding-right: 10px;
+    width: fit-content;
+    border-radius: 16px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+.member-index {
+    border: 1px solid lightslategray;
+    padding: 4px;
+    box-sizing: border-box;
+    width: 30px;    
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
     text-align: center;
-    font-weight: 200;
-    color: var(--text-color);
-}
-
-header p .member:not(:last-child) {
-    padding-right: 5px;
-    border-right: 1px solid gray;
 }
 
 .container {
@@ -60,7 +81,7 @@ header p .member:not(:last-child) {
 }
 
 #wrapper {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .outbox {
@@ -96,6 +117,7 @@ header p .member:not(:last-child) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .title a {
@@ -142,6 +164,8 @@ td:last-child {
     flex-direction: row;
     flex-wrap: nowrap;
     flex-flow: nowrap;
+    margin-bottom: 40px;
+    height: 250px;
 }
 
 #imgctn .imgbox {
@@ -149,7 +173,7 @@ td:last-child {
     padding: 5px;
     border: 1px solid var(--box-border);
     border-radius: 10px;
-    width: 300px;
+    height: 100%;
     flex-shrink: 0;
     margin-left: 10px;
 }
@@ -270,3 +294,9 @@ tr {
 .tlist .tdetail h2.e {
     border-right: 4px solid rgb(0, 194, 0);
 }
+footer {
+    height: 300px;
+    background: linear-gradient(to bottom right, lightyellow, rgb(255, 203, 203));
+    box-shadow: 0 0 5px lightslategray;
+}
+
