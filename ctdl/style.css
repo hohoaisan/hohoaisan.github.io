@@ -213,8 +213,11 @@ border-radius: 20px;
     overflow: hidden;
     width: 180px;
     margin-bottom: 10px;
+    transition: 0.5s;
 }
-
+#preview-ctn .preview-box:hover {
+    box-shadow: 0 0 10px lightcoral;
+}
 #preview-ctn .preview-box img{
     width: 100%;
 }
