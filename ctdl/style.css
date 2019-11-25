@@ -300,3 +300,12 @@ footer {
     box-shadow: 0 0 5px lightslategray;
 }
 
+.gist .blob-code {
+    font-size: 1.3em;
+    overflow: wrap;
+}
+
+.gist .blob-wrapper {
+    height: 500px;
+    overflow: auto;
+}
