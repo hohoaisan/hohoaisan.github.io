@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Cấu trúc dữ liệu và giải thuật nhóm 1<span><br>Thuật toán sắp xếp trộn (Merge Sort)</span></h1>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <div class="box">
+                <div class="title">
+                    <h2>Mô tả thuật toán</h2>
+                </div>
+                <p class="detail">
+                    Thuật toán sắp xếp trộn sử dụng quy tắc "chia để trị", nó hợp nhất hai dãy đã được sắp xếp thành một dãy với kích thước bằng tổng phần tử của hai dãy, đồng thời dãy được tạo thành cũng có thứ tự sắp xếp.
+                </p>
+                <ol>
+                    <li>So sánh 2 khoá đứng đầu 2 dãy</li>
+                    <li>Chọn ra khoá nhỏ nhất và đưa nó vào miền sắp xếp ở vị trí thích hợp</li>
+                    <li>Loại khoá vừa đưa ra khỏi dãy chứa nó</li>
+                    <li>Tiếp tục quá trình khi một trong 2 dãy đã rỗng, chuyển toàn bộ phần tử còn lại của dãy khoá kia vào miền sắp xếp</li>
+                </ol>
+            </div>
+            <div class="box">
+                <div class="title">
+                    <h2>Minh hoạ thuật toán</h2>
+                </div>
+                <div id="preview-ctn">
+                    <div class="preview-box"><img class="imgbox" src="./mergeSort/images/random.png"></div>
+                    <div class="preview-box"><img class="imgbox" src="./mergeSort/images/sorted.png"></div>
+                    <div class="preview-box"><img class="imgbox" src="./mergeSort/images/reversed.png"></div>
+    
+                </div>
+            </div>
+            <div class="box">
+                <div class="title">
+                    <h2>Cài đặt thuật toán</h2>
+                </div>
+                <script src="https://gist.github.com/hohoaisan/8a0e48bce82fe87f7d5585e69c177dd8.js"></script>
+                <iframe height="400px" width="100%" src="https://repl.it/@hohoaisan/mergeSort?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+<style>
+
+.gist .blob-code {
+    font-size: 1.3em;
+    overflow: wrap;
+}
+
+.gist .blob-wrapper {
+    height: 500px;
+    overflow: auto;
+}
+</style>
+<script src="./mergeSort/script.js"></script>
+</html>
