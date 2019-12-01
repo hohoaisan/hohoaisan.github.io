@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sắp xếp nổi bọt</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><br>Sắp xếp nổi bọt</h1>
+            <div class="container">
+                <div class="member-list">
+                    <p class="member"><span class="member-index">13</span>Võ Thị Hoàng Thư</p>
+                    <p class="member"><span class="member-index">21</span>Phạm Ngọc Anh</p>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="title">
+                <h2>Phần bài làm</h2>
+            </div>
+            <div class="tlist">
+                <div class="tdetail">
+                    <h2 class="a">Input <br>Output</h2>
+                </div>
+                <ul>
+                    <li>Input: Dãy số (a), số phần tử (n)</li>
+                    <li>Output: Dãy số tăng dần</li>
+                </ul>
+            </div>
+            <div class="tlist">
+                <div class="tdetail">
+                    <h2 class="p">Mô tả thuật toán</h2>
+                </div>
+                <ul>
+                    <li>Đi từ cuối mảng về đầu mảng, trong quá trình đi nếu phần tử ở dưới nhỏ hơn phần tử đứng ngay
+                        trước nó thì theo nguyên tắc của bọt khí phần tử nhẹ sẽ trồi lên phía trên. Kết quả phần tử nhỏ
+                        nhất sẽ trồi lên nhanh nhất</li>
+                    <li>Sau mỗi lần đi ta sẽ được 1 phần tử trồi lên đúng chỗ. Do vậy sau n-1 lần đi ta sẽ sắp xếp được
+                        thứ tự của mảng</li>
+                </ul>
+            </div>
+            <div class="tlist">
+                <div class="tdetail">
+                    <h2 class="e">Minh họa thuật toán</h2>
+                </div>
+                <ul>
+                    <li>Dãy số</li>
+                    <li>3 15 4 12 7 18</li>
+                    <li>Quá trình sắp xếp:</li>
+                    <li>i=1, j=5: 3 15 4 7 12 18</li>
+                    <li>i=1, j=3: 3 4 15 7 12 18 </li>
+                    <li>i=2, j=4: 3 4 7 15 12 18</li>
+                    <li>i=3, j=5: 3 4 7 12 15 18</li>
+                    <li>Dãy số được sắp xếp: 3 4 7 12 15 18</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="box">
+            <div class="title">
+                <h2>Cài đặt thuật toán</h2>
+                <div>
+                    <a target="_blank" href="https://repl.it/@ngocanhanh4/noibot">Download Code</a>
+                    <a target="_blank" href="https://repl.it/@ngocanhanh4/noibot">Run Code</a>
+                </div>
+            </div>
+            <script src="https://repl.it/@ngocanhanh4/noibot"></script>
+            <iframe height="1000px" width="100%" src="https://repl.it/@ngocanhanh4/noibot?lite=true" scrolling="no"
+                frameborder="no" allowtransparency="true" allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            <div class="title">
+                <h2>Kết quả chạy thử</h2>
+            </div>
+            <div id="preview-ctn">
+                <div class="preview-box"><img src="./SXnoibot1.png" alt="" class="imgbox"></div>
+                <div class="preview-box"><img src="./SXnoibot2.png" alt="" class="imgbox"></div>
+                <div class="preview-box"><img src="./SXnoibot3.png" alt="" class="imgbox"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="../script.js"></script>
+<style>
+    .gist .blob-code {
+        font-size: 1.3em;
+        overflow: wrap;
+    }
+
+    .gist .blob-wrapper {
+        height: 500px;
+        overflow: auto;
+    }
+</style>
+
+</html>

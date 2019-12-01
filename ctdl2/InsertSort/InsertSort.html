@@ -1,0 +1,108 @@
+
+
+<!-- Hoàng Văn Linh -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InsertSort</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Sắp xếp phương pháp chèn</h1>
+            <div class="container">
+                <div class="member-list">
+                    <p class="member"><span class="member-index">34</span>Hoàng Văn Linh</p>           
+                    <p class="member"><span class="member-index">31</span>Trần Võ Lập</p>
+                </div>
+            </div>
+
+        </header>
+        
+            <div class="container">
+                <div class="title">
+                    <h2>Phần bài làm</h2>
+                </div>
+                <div class="tlist">
+                    <div class="tdetail">
+                        <h2 class="a">Input <br>Output</h2>
+                    </div>
+                    <ul>
+                        <li>Input: Dãy số (a), số phần tử (n)</li>
+                        <li>Output: Dãy số tăng dần</li>
+                    </ul>
+                </div>
+                <div class="tlist">
+                    <div class="tdetail">
+                        <h2 class="p">Mô tả thuật toán</h2>
+                    </div>
+                    <ul>
+                        <li>Vị trí (iI=1,n-1</li>
+                        <li> <br>- Đoạn từ iI đến 1 xem như đã được sắp xếp tăng dần
+                            <br>-Nếu a[iI+1] < a[iT] thì chèn a[iI+1] vào đoạn từ iI đến 1 để đảm bảo từ đoạn 1 đến iI+1 là đoạn tăng dần(Bổ sung 1 số vào dãy đã được sắp xếp)  </li>
+                       
+                    </ul>
+                </div>
+                <div class="tlist">
+                    <div class="tdetail">
+                        <h2 class="e">Minh họa thuật toán</h2>
+                    </div>
+                    <ul>
+                        <li>Dãy số</li>
+                        <li>9 8 7 6 5 4 3 2 1 21</li>
+                        <li>Quá trình sắp xếp:</li>
+                        <li> iI=1:{8 9 7 6 5 4 3 2 1 21}</li>
+                        <li> iI=2:{7 8 9 6 5 4 3 2 1 21}</li>
+                        <li> iI=3:{6 7 8 9 5 4 3 2 1 21}</li>
+                        <li> iI=4:{5 6 7 8 9 4 3 2 1 21}</li>
+                        <li> iI=5:{4 5 6 7 8 9 3 2 1 21}</li>
+                        <li> iI=6:{3 4 5 6 7 8 9 2 1 21}</li>
+                        <li> iI=7:{2 3 4 5 6 7 8 9 1 21}</li>
+                        <li> iI=8:{1 2 3 4 5 6 7 8 9 21}</li>                   
+                        <li>Dãy số được sắp xếp: 1 2 3 4 5 6 7 8 9 21</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="box">
+                <div class="title">
+                    <h2>Cài đặt thuật toán</h2>
+                </div>
+                <script src="https://gist.github.com/knvolap/d8a638a5312f7fadd4e8af0a7ca0cdb4.js"></script>
+                <iframe height="400px" width="100%" src="https://repl.it/@LpV/hoanglinh?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+                <div class="title">
+                    <h2>Kết quả chạy thử</h2>
+                </div>
+                <div id="preview-ctn">
+                    <div class="preview-box"><img src="./InsertSort1.png" alt="" class="imgbox"></div>
+                    <div class="preview-box"><img src="./InsertSort2.png" alt="" class="imgbox"></div>
+                    <div class="preview-box"><img src="./InsertSort3.png" alt="" class="imgbox"></div>
+                </div>
+            </div>
+
+        </div>
+    
+</body>
+<script src="../script.js"></script>
+<style>
+
+.gist .blob-code {
+    font-size: 1.3em;
+    overflow: wrap;
+}
+
+.gist .blob-wrapper {
+    height: 500px;
+    overflow: auto;
+}
+</style>
+</html>
