@@ -90,6 +90,7 @@ header h1 {
 .outbox {
     box-sizing: border-box;
     padding: 20px 0 20px 0;
+    background: linear-gradient(to bottom left, rgb(255, 253, 232), white);
 }
 
 @media screen and (max-width: 1100px) {
@@ -322,7 +323,7 @@ tr {
 }
 
 #sort-ctn .sort:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 1.5%;
 }
 
 #sort-ctn .e-name {
