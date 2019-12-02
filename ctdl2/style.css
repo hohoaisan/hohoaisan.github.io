@@ -218,7 +218,6 @@ td:last-child {
 }
 
 ol {
-    list-style-type: none;
     list-style-position: inside;
     font-size: larger;
 }
@@ -273,13 +272,15 @@ tr {
 }
 
 .tlist .tdetail {
-    width: 200px;
+    width: 150px;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
     align-items: center;
 }
-
+.tlist ul {
+    flex: 1;
+}
 .tlist ul li {
     font-size: larger;
 }
