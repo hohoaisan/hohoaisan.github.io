@@ -29,6 +29,7 @@
                 <div class="title">
                     <h2>Phần bài làm</h2>
                 </div>
+                <!-- 
                 <div class="tlist">
                     <div class="tdetail">
                         <h2 class="a">Input <br>Output</h2>
@@ -36,20 +37,18 @@
                     <ul>
                         <li>Input: Dãy số (a), số phần tử (n)</li>
                         <li>Output: Dãy số tăng dần</li>
+                    
                     </ul>
                 </div>
+                -->
                 <div class="tlist">
                     <div class="tdetail">
                         <h2 class="p">Mô tả thuật toán</h2>
                     </div>
                     <ul>
-                        <li>Phân đoạn=n, min=1, max=n-1</li>
-                        <li>Chia dãy số thành 2 dãy: <br>- Dãy có các số nhỏ hơn a[n]<br>- Dãy có các số lớn hơn a[n]</li>
-                        <li>Cho vòng lặp While để so sánh giá trị a[Left] với pd, nếu nhỏ hơn thì tăng Left, lớn hơn thì dừng lại</li>
-                        <li>So sánh giá trị a[Right] với pd, nếu lớn hơn thì giảm Right, nhỏ hơn thì dừng lại</li>
-                        <li>Nếu a[Left] lớn hơn pd và a[Right] nhỏ hơn pd thì hoán vị a[Left] với a[Right]</li>
-                        <li>Nếu Left>Right thì dừng vòng lặp, hoán vị a[Left] và pd</li>
-                        <li>pd đã chia mảng thành mảng con, tiếp tục làm tương tự việc chia mảng với mảng con bên trái và mảng con bên phải cho đến khi không chia được nữa</li>
+                        <li>Lấy phần tử cuối cùng làm giá trị phân đoạn</li>
+                        <li>Chia dãy số thành 2 dãy, dãy bên trái có các phần tử có giá trị nhỏ hơn và dãy bên phải có giá trị lớn hơn điểm phân đoạn.</li>
+                        <li>Khi đó điểm phân đoạn có vị trí đúng trong dãy đã sắp xếp, tiếp tục quá trình phân đoạn cho 2 dãy con cho đến khi không phân được nữa</li>
                     </ul>
                 </div>
                 <div class="tlist">

@@ -20,25 +20,34 @@
                     <h2>Mô tả thuật toán</h2>
                 </div>
                 <p class="detail">
-                    Thuật toán sắp xếp trộn sử dụng quy tắc "chia để trị", nó hợp nhất hai dãy đã được sắp xếp thành một dãy với kích thước bằng tổng phần tử của hai dãy, đồng thời dãy được tạo thành cũng có thứ tự sắp xếp.
+                    Thuật toán sắp xếp trộn sử dụng quy tắc "chia để trị", nó hợp nhất hai dãy đã được sắp xếp thành một
+                    dãy với kích thước bằng tổng phần tử của hai dãy, đồng thời dãy được tạo thành cũng có thứ tự sắp
+                    xếp.
                 </p>
 
                 <ol>
                     <li>So sánh 2 khoá đứng đầu 2 dãy</li>
                     <li>Chọn ra khoá nhỏ nhất và đưa nó vào miền sắp xếp ở vị trí thích hợp</li>
                     <li>Loại khoá vừa đưa ra khỏi dãy chứa nó</li>
-                    <li>Tiếp tục quá trình khi một trong 2 dãy đã rỗng, chuyển toàn bộ phần tử còn lại của dãy khoá kia vào miền sắp xếp</li>
+                    <li>Tiếp tục quá trình khi một trong 2 dãy đã rỗng, chuyển toàn bộ phần tử còn lại của dãy khoá kia
+                        vào miền sắp xếp</li>
                 </ol>
             </div>
             <div class="box">
                 <div class="title">
                     <h2>Minh hoạ thuật toán</h2>
                 </div>
+                <ol>
+                    <li>Sắp xếp (dãy, vị trí đầu, vị trí cuối)</li>
+                    <li>Nếu vị trí đầu lớn hơn vị trí cuối thì thoát, ngược lại tiếp tục</li>
+                    <li>Chia dãy thành 2 nửa đầu và nửa cuối, rồi sắp xếp 2 dãy đó</li>
+                    <li>Sau khi 2 dãy con đã được sắp xếp, trộn chúng lại với nhau thành dãy có kích thước ban đầu</li>
+                </ol>
                 <div id="preview-ctn">
                     <div class="preview-box"><img class="imgbox" src="./images/random.png"></div>
                     <div class="preview-box"><img class="imgbox" src="./images/sorted.png"></div>
                     <div class="preview-box"><img class="imgbox" src="./images/reversed.png"></div>
-    
+
                 </div>
             </div>
             <div class="box">
@@ -46,23 +55,25 @@
                     <h2>Cài đặt thuật toán</h2>
                 </div>
                 <script src="https://gist.github.com/hohoaisan/8a0e48bce82fe87f7d5585e69c177dd8.js"></script>
-                <iframe height="400px" width="100%" src="https://repl.it/@hohoaisan/mergeSort?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <iframe height="400px" width="100%" src="https://repl.it/@hohoaisan/mergeSort?lite=true&outputonly=1"
+                    scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+                    sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
             </div>
         </div>
     </div>
-   
+
 </body>
 <style>
+    .gist .blob-code {
+        font-size: 1.3em;
+        overflow: wrap;
+    }
 
-.gist .blob-code {
-    font-size: 1.3em;
-    overflow: wrap;
-}
-
-.gist .blob-wrapper {
-    height: 500px;
-    overflow: auto;
-}
+    .gist .blob-wrapper {
+        height: 500px;
+        overflow: auto;
+    }
 </style>
 <script src="../script.js"></script>
+
 </html>
