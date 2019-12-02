@@ -44,19 +44,18 @@ document.addEventListener('click', (event) => {
         i.setAttribute('width','100%');
         i.setAttribute('id','ifm');
         ic.appendChild(i);
+        a = document.createElement('a');
+        a.innerText = 'CLOSE IFRAME';
+        a.setAttribute('id', 'iframe-button');
+        ic.appendChild(a);
         document.getElementsByTagName('body')[0].appendChild(ic);
         document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     }
-    if (event.srcElement.id == 'iframe-test') {
-        event.srcElement.parentNode.removeChild(event.srcElement);
-        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+    if (event.srcElement.id == 'iframe-test' || event.srcElement.id == 'iframe-button') {
+        b = document.getElementsByTagName('body')[0];
+        b.style.overflow = 'auto';
+        b.removeChild(document.getElementById('iframe-test'));
     }
 
 });
-
-// document.onkeyup = function (e) {
-//     if (e.ctrlKey && e.which == 67)
-//         alert("There was a bit difference between running code on the web and on DevC++, please download instead of copying");
-// };
-
 
