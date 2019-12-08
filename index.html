@@ -17,16 +17,22 @@
     * {
         margin: 0;
         text-align: justify;
+        font-size: calc(2vw + 2vh);
+        font-family: monospace;
+
     }
+
     html {
         width: 100%;
         height: 100%;
     }
+
     body {
         width: 100%;
         height: 100%;
         background: linear-gradient(to top right, black, rgb(26, 0, 34));
     }
+
     div {
         width: 100%;
         height: 100%;
@@ -39,18 +45,24 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    div, p {
+
+    div,
+    p {
         word-wrap: break-word;
     }
 </style>
 <script>
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-a = ['+','/','\\','|']
-t = document.getElementById('text')
-while (t.offsetHeight <= window.innerHeight) {
-    t.innerText += a[getRandomInt(4)];
-}
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+    function randomText() {
+        a = ['+', '/', '\\', '|']
+        t = document.getElementById('text')
+        while (t.offsetHeight <= window.innerHeight+200) {
+            t.innerText += a[getRandomInt(4)];
+        }
+    }
+    randomText();
 </script>
+
 </html>
