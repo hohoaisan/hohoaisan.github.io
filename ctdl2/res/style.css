@@ -312,3 +312,17 @@ tr {
 .totalresult {
     font-size: 1.4em;
 }
+
+.nhanxet {
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+
+}
+
+ul li {
+    padding: 0;
+    text-align: left;
+}
