@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Danhgia</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Cấu trúc dữ liệu và giải thuật nhóm 1<br>Xử lí chuỗi</h1>
+			<div class="container">
+				<div class="member-list">
+					<p class="member"><span class="member-index">1</span>Phạm Ngọc Anh</p>
+					<p class="member"><span class="member-index">13</span>Hoàng Phan Tuấn Dũng</p>
+					<p class="member"><span class="member-index">21</span>Bùi Nguyễn Ngọc Huy</p>
+					<p class="member"><span class="member-index">31</span>Trần Võ Lập</p>
+					<p class="member"><span class="member-index">34</span>Hoàng Văn Linh</p>
+					<p class="member"><span class="member-index">51</span>Hồ Hoài Sản</p>
+					<p class="member"><span class="member-index">61</span>Võ Thị Hoàng Thư</p>
+				</div>
+			</div>
+
+		</header>
+		<div class="container">
+
+			<div class="title">
+				<h2>Video thuyết trình</h2>
+				Nên xem dưới chế độ toàn màn hình để nhìn rõ hơn
+			</div>
+			<div class="media-ctn">
+				<div class="media-box">
+					<div class="media-video">
+						<iframe allowfullscreen="true" class="preview"
+							src="https://drive.google.com/file/d/16NDD9f8PTkL6H3aFSUmPUnKIxc_XnCBk/preview"></iframe>
+					</div>
+					<p class="title">Mật mã - mã hoá (encryption)</p>
+				</div>
+				<div class="media-box">
+					<div class="media-video">
+						<iframe allowfullscreen="true" class="preview"
+							src="https://drive.google.com/file/d/16NDD9f8PTkL6H3aFSUmPUnKIxc_XnCBk/preview"></iframe>
+					</div>
+					<p class="title">Mật mã - mã hoá (encryption)</p>
+				</div>
+				<div class="media-box">
+					<div class="media-video">
+						<iframe allowfullscreen="true" class="preview"
+							src="https://drive.google.com/file/d/16NDD9f8PTkL6H3aFSUmPUnKIxc_XnCBk/preview"></iframe>
+					</div>
+					<p class="title">Mật mã - mã hoá (encryption)</p>
+				</div>
+				<div class="media-box">
+					<div class="media-video">
+						<iframe allowfullscreen="true" class="preview"
+							src="https://drive.google.com/file/d/16NDD9f8PTkL6H3aFSUmPUnKIxc_XnCBk/preview"></iframe>
+					</div>
+					<p class="title">Mật mã - mã hoá (encryption)</p>
+				</div>
+			</div>
+		</div>
+		<div class="outbox">
+			<div class="container">
+				<div class="title">
+					<h2>Quá trình thực hiện</h2>
+				</div>
+				<div class="box">
+					<ol>
+						<li><span class="date">05/12/2019</span><span>Họp nhóm thực hiện đánh giá các nhóm
+								khác</span></li>
+					</ol>
+					<div id="imgctn">
+						<img src="./anh1.jpg">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+	document.addEventListener('click', (event) => {
+		if (event.srcElement.classList.contains('preview'))
+			alert(event.srcElement.getAttribute('src'));
+	})
+</script>
+
+</html>
