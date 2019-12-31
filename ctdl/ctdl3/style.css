@@ -344,3 +344,7 @@ iframe {
     background: linear-gradient(to top, #000000, #000000);
     margin: 0;
 }
+
+.media-box:nth-last-child(1):nth-child(odd) {
+    flex: 1;
+}

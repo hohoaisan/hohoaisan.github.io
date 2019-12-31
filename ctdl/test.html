@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		How to modify URL without reloading 
+		the page using JavaScript? 
+	</title> 
+</head> 
+
+<body> 
+	<h1 style="color: green"> 
+		GeeksForGeeks 
+	</h1> 
+	
+	<b> 
+		How to modify URL without reloading 
+		the page using JavaScript? 
+	</b> 
+	
+	<p> 
+		Click on the button below to add 
+		a new history state 
+	</p> 
+	
+	<button onclick="addState()"> 
+		Add history state 
+	</button> 
+	
+	<script> 
+		function addState() { 
+			let stateObj = { id: "100" }; 
+			
+			window.history.pushState(stateObj, 
+					"Page 2", "/page2.html"); 
+		} 
+	</script> 
+</body> 
+
+</html> 
