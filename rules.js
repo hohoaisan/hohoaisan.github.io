@@ -10,7 +10,7 @@ document.addEventListener('click', (event) => {
             }
         }
         anchor = Date.now();
-        if (document.querySelectorAll('.complete').length == 17) {
+        if (document.querySelectorAll('.complete').length == 14) {
             setTimeout(()=>{
                 if (prompt(
                     "Cảm ơn bạn đã đọc hết nội quy của group, sau đây là mã số để trả lời cho câu hỏi thứ nhất, mong bạn sẽ là một thành viên tích cực của group trong tương lai",
