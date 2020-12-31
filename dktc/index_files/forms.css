@@ -1,0 +1,188 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 IceTheme. All Rights Reserved
+  
+  License:
+  Copyrighted Commercial Software 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+/* General Forsm Styles */
+label { 
+	font-weight: normal;
+	vertical-align:top;
+	width:160px;
+	display:inline-block}
+
+fieldset { 
+	padding:1.4em;
+	margin: 1em 0 1.5em .2em; 
+	border:1px dotted #ccc;}
+	
+legend  { 
+	font-size:1.5em;
+	border:1px dotted #ccc;
+	padding:0.3em 1em 0.4em}
+
+
+/* Text fields */
+.inputbox,
+input[type="text"],
+input[type="password"]  {
+	background: #F2F2F2;
+	border:1px solid #DEDEDE;
+	margin:0 0.25em 0 0;
+	color:#555;
+	padding:3px 5px;
+	-moz-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
+	-webkit-transition: all .4s ease-in;
+	transition: all .4s ease-in;}
+	.inputbox:hover,
+	.inputbox:focus,
+	input[type="text"]:hover,
+	input[type="text"]:focus,
+	input[type="password"]:hover,
+	input[type="password"]:focus  {
+		background:#fff;
+		-moz-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+		-webkit-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+		box-shadow:0px 0px 8px rgba(0,0,0,.3);}
+
+	/* inside the columns modules because they have a dark background color  */
+	.col-module-content .inputbox {
+		background:rgba(0,0,0,.3);
+		color:rgba(255,255,255,.6);
+		border-color:rgba(255,255,255,.3)}
+		.col-module-content .inputbox:hover,
+		.col-module-content .inputbox:focus {
+			border-color:rgba(255,255,255,.5);
+			-moz-box-shadow:0px 0px 8px rgba(255,255,255,.4);
+			-webkit-box-shadow:0px 0px 8px rgba(255,255,255,.4);
+			box-shadow:0px 0px 8px rgba(255,255,255,.4);}
+		
+		
+textarea { 
+	background: #F2F2F2;
+	border:1px solid #DEDEDE;
+	margin:0 0.25em 0 0;
+	color:#555;
+	padding:3px 5px;
+	-moz-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
+	-webkit-transition: all .4s ease-in;
+	transition: all .4s ease-in; }
+	textarea:hover,
+	textarea:focus { 
+		background:#fff;
+		-moz-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+		-webkit-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+		box-shadow:0px 0px 8px rgba(0,0,0,.3);}
+
+
+select {
+	color:#555;
+	background-color: #fff;
+	border:1px solid #DEDEDE;
+	outline:solid thin;}
+	select:focus { }
+
+/* Other */
+form p img {
+	float:none;
+	margin:0;
+	vertical-align:middle}
+
+
+
+/* Success, Notice and Error Form Messages */
+.success,
+.notice,
+.error { 
+	padding:.6em 1em 0.6em 3.4em;
+	border:1px solid #fff;
+	margin-bottom: 2em;}
+	.success { 
+		color: #264409;
+		background:#E6EFC2 url(../images/typo_success.png) no-repeat 10px center;
+		-moz-box-shadow: 0 0 8px #4D8912;
+		-webkit-box-shadow: 0 0 8px 4D8912;
+		box-shadow: 0 0 8px #4D8912;}
+	.notice { 
+		color: #514721;
+		background:#FFF6BF url(../images/typo_note.png) no-repeat 10px center;
+		-moz-box-shadow: 0 0 8px #877736;
+		-webkit-box-shadow: 0 0 8px 877736;
+		box-shadow: 0 0 8px #877736;}
+	.error { 
+		color: #8A1F11;
+		background:#FBE3E4 url(../images/typo_error.png) no-repeat 10px center;
+		-moz-box-shadow: 0 0 8px #B82917;
+		-webkit-box-shadow: 0 0 8px B82917;
+		box-shadow: 0 0 8px #B82917;}
+
+
+
+
+	
+/* Buttons 
+------------ */
+	
+button,
+input.button,
+a.button {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	background:#1a1a1a;
+	background: -moz-linear-gradient(100% 100% 90deg, #1a1a1a, #3F3F3F);
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3F3F3F), to(#1a1a1a));
+	border:1px solid #fff;
+	color:#DEDEDE;
+	text-shadow:1px 1px 1px #000;
+	display:inline-block;
+	padding:3px 12px; 
+	cursor:pointer;
+	font-size:1em;
+	margin:0 .25em;
+	-moz-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+	-webkit-box-shadow:0px 0px 8px rgba(0,0,0,.3);
+	box-shadow:0px 0px 8px rgba(0,0,0,.3);
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out; }
+	
+	button:hover,
+	input.button:hover,
+	a.button:hover {
+		text-decoration:none;
+		-moz-box-shadow:0px 0px 8px rgba(0,0,0,.8);
+		-webkit-box-shadow:0px 0px 8px rgba(0,0,0,.8);
+		box-shadow:0px 0px 8px rgba(0,0,0,.8); }
+		
+		button:focus,
+		input.button:focus,
+		a.button:focus { background:#0F0F0F;}
+			
+	
+	
+	a.button {
+		padding:2px 15px}
+	
+	
+	/* inside the columns modules because they have a dark background color  */
+	.col-module-content button,
+	.col-module-content input.button,
+	.col-module-content a.button { 
+		border-color:rgba(255,255,255,.5);
+		-moz-box-shadow:0px 0px 8px rgba(255,255,255,.3);
+		-webkit-box-shadow:0px 0px 8px 255,255,255,.3);
+		box-shadow:0px 0px 8px 255,255,255,.3);}
+		.col-module-content button:hover,
+		.col-module-content input.button:hover,
+		.col-module-content a.button:hover {
+			text-decoration:none;
+			-moz-box-shadow:0px 0px 8px rgba(255,255,255,.6);
+			-webkit-box-shadow:0px 0px 8px rgba(255,255,255,.6);
+			box-shadow:0px 0px 8px rgba(255,255,255,.6); }
